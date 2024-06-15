@@ -1,6 +1,6 @@
  
 
-# Spring Boot In Practice - Study
+# Spring Boot in Practice - Study
 
 >  - 실전 스프링 부트 - 스터디
 
