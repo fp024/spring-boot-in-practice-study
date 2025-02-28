@@ -10,7 +10,7 @@
 
 ### 저자님 예제
 
-* 
+* https://github.com/spring-boot-in-practice/repo/tree/main/ch01
 
 
 
@@ -33,7 +33,30 @@ spring:
 
 
 
+### 💡 스프링 부트 액추에이터
 
+* http://localhost:8080/actuator
+
+  ```json
+  {
+    "_links": {
+      "self": {
+        "href": "http://localhost:8080/actuator",
+        "templated": false
+      },
+      "health": {
+        "href": "http://localhost:8080/actuator/health",
+        "templated": false
+      },
+      "health-path": {
+        "href": "http://localhost:8080/actuator/health/{*path}",
+        "templated": true
+      }
+    }
+  }
+  ```
+
+  * http://localhost:8080/actuator/health
 
 
 

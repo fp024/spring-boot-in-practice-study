@@ -1,5 +1,5 @@
 server:
-  shutdown: graceful
+  shutdown: graceful  
 
 spring:
   application:

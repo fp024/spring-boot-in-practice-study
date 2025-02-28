@@ -27,7 +27,8 @@
     "thymeleaf",
     "ultraq",
     "webjars",
-    "xerial"
+    "xerial",
+    "Xshare"
   ],
   "import": []
 }
