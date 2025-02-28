@@ -1,0 +1,9 @@
+rootProject.name = 'chap01-boot3'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../gradle/libs.versions.toml"))
+    }
+  }
+}
