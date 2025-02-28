@@ -1,6 +1,11 @@
+server:
+  shutdown: graceful
+
 spring:
   application:
     name: chap01-boot3
+  lifecycle:
+    timeout-per-shutdown-phase: 1m
 
 logging:
   pattern:

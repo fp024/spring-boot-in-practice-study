@@ -8,7 +8,28 @@
 
 ## 진행
 
+### 저자님 예제
+
+* 
+
+
+
 ⬜ 한번 읽어보기
+
+
+
+### 💡 안전 종료 설정
+
+```yaml
+server:
+  shutdown: graceful
+# ...
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 1m
+```
+
+더이상의 요청은 받지 않지만, 이미 처리 중인 요청은 완료를 보장하는 설정
 
 
 
@@ -18,7 +39,7 @@
 
 ## 의견
 
-* ...
+저자님은 Maven 쓰시는데, 나는 Gradle을 사용했을 때, 이전 버전 프로젝트를 구분해서 만들기가 편해서 Gradle 쓰기로 했다. 😅
 
 
 

@@ -1,9 +1,9 @@
-import { exec } from 'child_process';
-import os from 'os';
+import { exec } from "child_process";
+import os from "os";
 
-const isWindows = os.platform() === 'win32';
-const gradleCommand = isWindows ? 'gradlew.bat' : './gradlew';
-const args = process.argv.slice(2).join(' ');
+const isWindows = os.platform() === "win32";
+const gradleCommand = isWindows ? "gradlew.bat" : "./gradlew";
+const args = process.argv.slice(2).join(" ");
 
 exec(`${gradleCommand} ${args}`, (error, stdout, stderr) => {
   if (error) {

@@ -16,6 +16,16 @@
       "projectName": "lotto_admin",
       "args": "--spring.profiles.active=dev",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-BootApplication<chap01-boot3>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "org.springboot.practice.BootApplication",
+      "projectName": "chap01-boot3",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
