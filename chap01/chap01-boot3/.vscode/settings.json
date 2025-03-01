@@ -12,14 +12,14 @@
   "[javascript]": {
     "editor.formatOnSave": true
   },
+  "[yaml]": {
+    "editor.formatOnSave": true
+  },
   "spring-boot.ls.problem.version-validation.UPDATE_LATEST_MINOR_VERSION": "IGNORE",
   "java.test.config": {
     "vmArgs": [
       "-javaagent:${workspaceFolder}/javaagent-libs/mockito-core-5.14.2.jar",
       "-Xshare:off"
     ]
-  },
-  "cSpell.words": [
-    "springboot"
-  ]
+  }
 }

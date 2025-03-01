@@ -58,6 +58,48 @@ spring:
 
   * http://localhost:8080/actuator/health
 
+### 💡 Graceful 동작 확인
+
+bootRun으로 실행시키고 해당 콘솔에서 Ctrl + C를 누르면 Graceful 동작 확인을 할 수가 없어서, 
+
+shutdown 엔드 포인트 노출시키고 Curl로 확인해보았다.
+
+```yaml
+management:
+  endpoint:
+    shutdown:
+      access: unrestricted
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - shutdown
+```
+
+#### curl 명령 실행
+
+```sh
+$ curl -X POST http://localhost:8080/actuator/shutdown
+{"message":"Shutting down, bye..."}
+```
+
+#### 로그 확인
+
+```
+17:11:56.088 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/actuator/shutdown", parameters={}
+17:11:56.093 [http-nio-8080-exec-3] DEBUG o.s.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping - Mapped to Actuator web endpoint 'shutdown'
+17:11:56.106 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+17:11:56.116 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+17:11:56.139 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [org.springframework.boot.actuate.context.ShutdownEndpoint$ShutdownDescriptor@bfd82b0]
+17:11:56.149 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+17:11:56.631 [Thread-7] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+17:11:56.642 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+...
+```
+
+**💡 노출된 shutdown 엔드포인트에 대해서는 Spring Security와 연동해서 접근 제한을 설정해야한다.**
+
 
 
 ## 의견
