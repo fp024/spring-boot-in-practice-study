@@ -1,6 +1,5 @@
 plugins {
   id 'java'
-  id 'war'
   alias(libs.plugins.spring.boot.v3dot4)
   alias(libs.plugins.spring.dependency.management)
 }
@@ -31,8 +30,6 @@ repositories {
 
 dependencies {
   implementation 'org.springframework.boot:spring-boot-starter'
-  implementation 'org.springframework.boot:spring-boot-starter-web'
-  implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
   developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
