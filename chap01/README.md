@@ -14,7 +14,7 @@
 
 
 
-⬜ 한번 읽어보기
+✅ 한번 읽어보기
 
 
 
@@ -99,6 +99,14 @@ $ curl -X POST http://localhost:8080/actuator/shutdown
 ```
 
 **💡 노출된 shutdown 엔드포인트에 대해서는 Spring Security와 연동해서 접근 제한을 설정해야한다.**
+
+
+
+### spring-boot:start Goal
+
+spring-boot:run를 fork실행하는 spring-boot:start Goal이 Spring Boot 2.7부터 제거되었다고 한다.
+
+* https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide#running-your-application-in-the-maven-process
 
 
 
