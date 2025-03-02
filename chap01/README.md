@@ -100,6 +100,8 @@ $ curl -X POST http://localhost:8080/actuator/shutdown
 
 **💡 노출된 shutdown 엔드포인트에 대해서는 Spring Security와 연동해서 접근 제한을 설정해야한다.**
 
+> ✨ 그런데... CMD에서 Ctrl +C로 끝냈을 때는 Gracleful 로그가 나타나지 않았는데, Git-Bash에서는 나타난다.
+
 
 
 ### spring-boot:start Goal
