@@ -108,6 +108,34 @@ gradle clean bootRun
 
 
 
+### 2.2.1 기법: `@ConfigurationProperties`를 사용한 커스텀 프로퍼티 정의
+
+**스프링 부트 설정 처리기**를 gradle에서는 다음과 같이 설정한다.
+
+```groovy
+annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+```
+
+
+
+#### Spring Boot 3 부터는 타입 레벨에서의 @ConstructorBinding은 더 이상 필요없음
+
+* https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide#constructingbinding-no-longer-needed-at-the-type-level
+
+> @ConstructorBinding은 더 이상 @ConfigurationProperties 클래스의 유형 수준에서 필요하지 않으므로 제거해야 합니다. 클래스 또는 레코드에 여러 생성자가 있는 경우, 속성 바인딩에 사용할 생성자를 나타내기 위해 생성자에서 여전히 사용될 수 있습니다.
+>
+> @ConfigurationProperties 클래스의 생성자에 종속성을 자동 연결하는 데 의존하고 있었다면, 이제 @Autowired로 주석을 달아 속성 바인딩의 대상으로 식별되는 것을 방지해야 합니다.
+
+💡그래서 생성자에 붙였다.. 단일 생성자 하나라면 생략해도 된다고 한다.
+
+그런데.. 이런 설정을 하고나니까... VSCode에서 application.properties에 설정한 커스텀 프로퍼티 내용들의 경고들이 해결되었다. 정확하게 인식이됨.
+
+설명도 필드의 JavaDoc기준으로 설명이 자동으로 붙음 👍
+
+
+
+
+
 
 
 ## 의견

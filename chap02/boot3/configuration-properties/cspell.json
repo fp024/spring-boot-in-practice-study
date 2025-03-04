@@ -1,0 +1,36 @@
+{
+  // https://cspell.org/
+  "version": "0.2",
+  "ignorePaths": [
+    "/bin/**",
+    "/build/**",
+    "/.vscode/**",
+    "/.idea/**",
+    "/gradlew",
+    "/gradlew.bat",
+    "/src/main/resources/static/css",
+    "/src/main/resources/application*.*",
+    "/docs/database.md",
+    "pnpm-lock.yaml"
+  ],
+  "words": [
+
+  ],
+  "ignoreWords": [
+    "springboot",
+    "codegen",
+    "gradlew",
+    "jquery",
+    "prefs",
+    "projectlombok",
+    "Quarydsl",
+    "thymeleaf",
+    "ultraq",
+    "webjars",
+    "xerial",
+    "Xshare",
+    "configurationproperties",
+    "sbip"
+  ],
+  "import": []
+}
