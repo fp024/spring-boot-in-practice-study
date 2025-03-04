@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "app.timeout",
+      "type": "java.lang.String",
+      "description": "app.timeout OS 테스트 환경변수"
+    }
+  ]
+}

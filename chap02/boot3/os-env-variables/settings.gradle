@@ -1,0 +1,9 @@
+rootProject.name = 'os-env-variables'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}

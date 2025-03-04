@@ -1,0 +1,13 @@
+app.timeout: ${APP_TIMEOUT}
+
+spring:
+  application:
+    name: os-env-variables
+
+logging:
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} [%thread] %clr(%-5level) %clr(%logger{72}){cyan} - %msg%n"
+  level:
+    root: info
+    web: debug
+    "[org.springboot.practice]": debug
