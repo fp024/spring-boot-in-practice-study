@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-data-file
+  profiles:
+    active:
+      - test
+
+logging:
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} [%thread] %clr(%-5level) %clr(%logger{72}){cyan} - %msg%n"
+  level:
+    root: info
+    web: debug
+    "[org.springboot.practice]": debug
