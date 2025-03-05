@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "SpringBootAppDemoApplication",
+      "request": "launch",
+      "mainClass": "org.springboot.practice.SpringBootAppDemoApplication",
+      "projectName": "config-data-file"
+    }
+  ]
+}

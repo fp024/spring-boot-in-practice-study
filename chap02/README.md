@@ -134,7 +134,36 @@ annotationProcessor 'org.springframework.boot:spring-boot-configuration-processo
 
 
 
+### 2.3.1 기법: 스프링 부트 애플리케이션 시작 시 CommandLineRunner로 코드 실행
 
+예제를 실행해 봤을 때, @Order(1)로 설정한 것이 제일 먼저 수행되고,
+
+그 다음이 @Order(2), 그 다음은...  Boot 애플리케이션 클래스에 별도 지정한 Bean, 
+
+마지막으로 Boot 애플리케이션이 Override한 run() 내부였다. 
+
+그리고 gradle에서 커멘드라인 인자를 전달하려면 다음과 같이 실행한다.
+
+```sh
+gradle clean bootRun --args="args1 args2 args3" 
+```
+
+**실행결과**
+
+```
+...
+11:27:34.204 [restartedMain] INFO  org.springboot.practice.commandline.MyCommandLineRunner - MyCommandLineRunner executed as a Spring Component
+11:27:34.204 [restartedMain] INFO  org.springboot.practice.commandline.AnotherCommandLineRunner - AnotherCommandLineRunner executed as a Spring Component
+11:27:34.204 [restartedMain] INFO  org.springboot.practice.CourseTrackerApplication - CommandLineRunner executed as a bean definition with 3 arguments
+11:27:34.204 [restartedMain] INFO  org.springboot.practice.CourseTrackerApplication - Argument: args1
+11:27:34.204 [restartedMain] INFO  org.springboot.practice.CourseTrackerApplication - Argument: args2
+11:27:34.204 [restartedMain] INFO  org.springboot.practice.CourseTrackerApplication - Argument: args3
+11:27:34.204 [restartedMain] INFO  org.springboot.practice.CourseTrackerApplication - CourseTrackerApplication CommandLineRunner has executed
+```
+
+> * https://github.com/spring-boot-in-practice/repo/tree/main/ch02/command-line-runner/spring-boot-app-start
+>
+> 위의 예제 소스는 CommandLineRunner 적용 전의 기본 소스라서 추가하지 않아도 될 것 같다.
 
 
 
