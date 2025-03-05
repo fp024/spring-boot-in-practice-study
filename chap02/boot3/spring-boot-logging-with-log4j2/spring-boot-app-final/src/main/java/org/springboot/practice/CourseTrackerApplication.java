@@ -1,0 +1,15 @@
+package org.springboot.practice;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@Slf4j
+@SpringBootApplication
+public class CourseTrackerApplication {
+
+  public static void main(String[] args) {
+    SpringApplication.run(CourseTrackerApplication.class, args);
+    log.info("CourseTrackerApplication started successfully with Log4j2 configuration");
+  }
+}

@@ -189,6 +189,24 @@ logging:
 
 
 
+### 2.4.2 기법: 스프링 부트 애플리케이션에서 Log4j2 사용
+
+Gradle에서도 `spring-boot-starter-logging`에 대한 제외 설정을 해줘야한다.
+
+```groovy
+configurations {
+  all {
+    exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+  }
+}
+
+dependencies {
+  // ...
+  implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+  // ...
+}
+```
+
 
 
 

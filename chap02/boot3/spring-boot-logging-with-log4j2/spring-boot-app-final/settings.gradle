@@ -1,0 +1,9 @@
+rootProject.name = 'spring-boot-logging-with-log4j2'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../../gradle/libs.versions.toml"))
+    }
+  }
+}
