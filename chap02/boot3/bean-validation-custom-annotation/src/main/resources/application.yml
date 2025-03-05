@@ -1,6 +1,6 @@
 spring:
   application:
-    name: bean-validation
+    name: bean-validation-custom-annotation
 
 logging:
   pattern:

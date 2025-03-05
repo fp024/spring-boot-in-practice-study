@@ -1,0 +1,9 @@
+rootProject.name = 'bean-validation-custom-annotation'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}
