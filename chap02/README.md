@@ -145,7 +145,7 @@ annotationProcessor 'org.springframework.boot:spring-boot-configuration-processo
 그리고 gradle에서 커멘드라인 인자를 전달하려면 다음과 같이 실행한다.
 
 ```sh
-gradle clean bootRun --args="args1 args2 args3" 
+gradle clean bootRun --args="args1 args2 args3"
 ```
 
 **실행결과**
@@ -164,6 +164,34 @@ gradle clean bootRun --args="args1 args2 args3"
 > * https://github.com/spring-boot-in-practice/repo/tree/main/ch02/command-line-runner/spring-boot-app-start
 >
 > 위의 예제 소스는 CommandLineRunner 적용 전의 기본 소스라서 추가하지 않아도 될 것 같다.
+
+
+
+### 2.4.1 기법: 스프링 부트 애플리케이션의 기본 로깅 이해 및 커스터마이징
+
+```yml
+logging:
+  pattern:
+    console: "%clr(%d{dd-MM-yyyy HH:mm:ss.SSS}){yellow} %clr(${PID:- }){green} %magenta([%thread]) %highlight([%-5level]) %clr(%-40.40logger{39}){cyan} %msg%n"
+  file:
+    path: sbip/logs
+  logback:
+    rollingpolicy:
+      max-history: 7 # 기본값 7일
+      max-file-size: 10MB # 기본값 10MB
+```
+
+위 처럼 path를 sbip/logs로 설정하면 프로젝트 루트 기준으로 이하 경로가 생긴다.
+
+그리고 디렉토리가 없을 경우, 디렉토리도 자동으로 생성이됨.
+
+> 💡 스프링 부트는 기본적으로 날짜가 바뀌거나 로그파일 10MB가 되면 새로그 파일로 롤링함
+
+
+
+
+
+
 
 
 
