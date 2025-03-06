@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: configuring-mongodb-database
+
+  # data:
+  #   mongodb:
+  #     authentication-database: # Authentication database name.
+  #     database: sbip # Database name.
+  #     field-naming-strategy: # Fully qualified name of the FieldNamingStrategy to use.
+  #     gridfs:
+  #       database: fs-database # GridFS database name.
+  #     host: localhost # Mongo server host.
+  #     password: # Login password of the mongo server.
+  #     port: 27017 # Mongo server port.
+  #     uri: mongodb://localhost/test # Mongo database URI. When set, host and port are ignored.
+  #     username: # Login user of the mongo server.
+
+de.flapdoodle.mongodb.embedded.version: 5.0.9
+
+logging:
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} [%thread] %clr(%-5level) %clr(%logger{72}){cyan} - %msg%n"
+  level:
+    root: info
+    web: debug
+    "[org.springboot.practice]": debug

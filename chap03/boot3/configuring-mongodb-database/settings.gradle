@@ -1,0 +1,9 @@
+rootProject.name = 'configuring-mongodb-database'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}

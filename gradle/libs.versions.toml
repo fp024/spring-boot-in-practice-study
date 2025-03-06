@@ -17,6 +17,9 @@ spring-cloud-dependencies = "2024.0.0"
 # https://mvnrepository.com/artifact/org.passay/passay
 passay = "1.6.6"
 
+# https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo.spring
+embedded-mongo-spring3x = "4.18.0"
+
 ### WebJars ###
 # https://mvnrepository.com/artifact/org.webjars/webjars-locator
 # webjars-locator는 Boot Dependencies에 있는 webjars-locator-core를 그대로 쓰면 된다.
@@ -30,6 +33,7 @@ webjars-bootstrap = "5.3.3"
 [libraries]
 spring-cloud-dependencies = { module = "org.springframework.cloud:spring-cloud-dependencies", version.ref = "spring-cloud-dependencies" }
 passay = { module = "org.passay:passay", version.ref = "passay" }
+embedded-mongo-spring3x = { module = "de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring3x", version.ref = "embedded-mongo-spring3x" }
 
 webjars-jquery = { module = "org.webjars:jquery", version.ref = "webjars-jquery" }
 webjars-bootstrap = { module = "org.webjars:bootstrap", version.ref = "webjars-bootstrap" }
