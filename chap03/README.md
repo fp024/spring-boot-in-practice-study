@@ -65,6 +65,36 @@ CREATE TABLE COURSES
 
 
 
+### 3.3.1 기법: 스프링 데이터 JPA를 사용해서 도메인 객체를 관계형 데이터베이스에서 관리
+
+### 💡 id로 정수를 쓸 경우 레퍼타입을 사용할 것!
+
+* [Question about delete behavior when using Spring Data JPA and the entity’s ID is a primitive type · Issue #3107 · spring-projects/spring-data-jpa](https://github.com/spring-projects/spring-data-jpa/issues/3107)
+
+  > 원시 타입을 쓰면 int, long의 경우 값이 새로운 엔티티라고 판단을 하게되서, 
+  >
+  > 만약 DB에 ID가 0인 데이터가 있을 경우 삭제를 못하게된다.
+
+p104를 보면.. Course 엔티티의 ID가 레퍼 타입이 맞는데, 예제 소스는 수정이 안되어있던 것 같다.
+
+* h2에서도 `@GeneratedValue(strategy = GenerationType.IDENTITY)`로 지정하면 1부터 시작한다.
+
+
+
+Optional 결과 반환은 isEqualTo 보단 contains()로 검사하는게 좋다고 한다.
+
+```java
+assertThat(courseRepository.findById(savedCourse.getId())) //
+    .contains(course);
+```
+
+Optional의 isPresent() 결과도 직접 검사하는 메서드가 있다.
+
+```java
+assertThat(courseRepository.findById(savedCourse.getId())) //
+    .isNotPresent();
+```
+
 
 
 

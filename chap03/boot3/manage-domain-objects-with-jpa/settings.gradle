@@ -1,0 +1,9 @@
+rootProject.name = 'manage-domain-objects-with-jpa'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}
