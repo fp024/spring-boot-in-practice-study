@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: configuring-relational-database
+  datasource:
+    url: jdbc:h2:mem:sbipdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+
+logging:
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} [%thread] %clr(%-5level) %clr(%logger{72}){cyan} - %msg%n"
+  level:
+    root: info
+    web: debug
+    "[org.springboot.practice]": debug

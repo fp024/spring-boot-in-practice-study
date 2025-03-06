@@ -49,9 +49,9 @@ java -jar build/libs/config-data-file-0.0.1-SNAPSHOT.jar --spring.profiles.activ
 > ```yml
 > spring:
 >   ...
->   profiles:
->     active:
->       - test
+>     profiles:
+>        active:
+>        - test
 > ```
 
 * https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-Config-Data-Migration-Guide#profile-specific-documents
