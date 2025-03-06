@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: initialize-relational-database-with-schema
+  datasource:
+    url: jdbc:h2:mem:sbipdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always # This is to instruct Spring Boot to initialize database schema.
+      schema-locations: # Specifying a different schema file location
+        - classpath:sql/schema/sbip-schema.sql
+      data-locations: # Specifying a different data file location
+        - classpath:sql/data/sbip-data.sql
+      platform: h2 # Specify the database platform
+
+logging:
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} [%thread] %clr(%-5level) %clr(%logger{72}){cyan} - %msg%n"
+  level:
+    root: info
+    web: debug
+    "[org.springboot.practice]": debug

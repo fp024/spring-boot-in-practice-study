@@ -45,13 +45,35 @@ runtimeOnly (libs.embedded.mongo.spring3x)
 
 
 
+### 3.2.3 기법: 스프링 부트 애플리케이션에서 관계형 데이터베이스 초기화
+
+💡 **h2 2.3.232 버전**에서는  INT(15), INT(1) 등으로 자리수 정보를 넣으면 문법 오류가 발생한다.
+
+```sql
+CREATE TABLE COURSES
+(
+    id           INT NOT NULL,
+    name         VARCHAR(100) NOT NULL,
+    category     VARCHAR(20) NOT NULL,
+    rating       TINYINT NOT NULL,
+    description  VARCHAR(1000) NOT NULL,
+    PRIMARY KEY (id)
+);
+```
+
+* 💡 **INT(1)**로 되어있던 rating은 **TINYINT**로 변경했다.
+
+
+
 
 
 
 
 ## 의견
 
-* ...
+나에게 유용했던 내용
+
+* p99에 DB 플렛폼 ID를 파일이름에 포함시켜서 sql 파일들을 나눠서 만들수 있다는 점.
 
 
 

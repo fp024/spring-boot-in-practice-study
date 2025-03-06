@@ -1,0 +1,9 @@
+rootProject.name = 'initialize-relational-database-with-schema'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}
