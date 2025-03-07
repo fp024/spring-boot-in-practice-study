@@ -1,0 +1,9 @@
+rootProject.name = 'using-paging-and-sorting-repository'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}

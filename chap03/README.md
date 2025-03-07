@@ -120,6 +120,34 @@ org.springframework.dao.InvalidDataAccessApiUsageException: You're trying to exe
 
 
 
+### 3.4.4 PagingAndSortingRepository 인터페이스로 데이터 페이징 및 정렬
+
+> sql 스크립트로 초기화할 때... resource에 schema.sql, data.sql 두가지 만들어놓고 설정을 ddl-auto: none 으로만 하면 되는구나... 난 예전에 jakarta jpa 프로퍼티 설정으로 처리했었는데... 😂
+
+이번에 assertj의 테스트 방식에 Condition을 활용하는 부분..
+
+```java
+  @Test
+  void givenDataAvailableWhenSortsFirstPageThenGetSortedSData() {
+    Pageable pageable = PageRequest.of(0, 5, Sort.by(Sort.Order.asc("name")));
+    Condition<Course> sortedFirstCourseCondition =
+        new Condition<Course>() {
+          @Override
+          public boolean matches(Course course) {
+            return course.getId() == 4
+                && course.getName().equals("Cloud Native Spring Boot Application Development");
+          }
+        };
+    assertThat(courseRepository.findAll(pageable)).first().has(sortedFirstCourseCondition);
+  }
+```
+
+조회 결과 페이지의 첫번째 Course가 해당 조건을 가지는지 확인한다.
+
+name이 C로시작하는것이 항상 오름차순 기준 첫번째이므로 그것을 검사하는 테스트 코드다.
+
+
+
 
 
 ## 의견
