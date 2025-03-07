@@ -177,6 +177,25 @@ gradle clean classes
 
 
 
+### 3.7.2 기법: 프로젝션
+
+이 예제는 using-query-dsl 예제에 코드를 추가해서 테스트 해도 되겠다.
+
+```sql
+Hibernate: 
+    select
+        c1_0.description 
+    from
+        courses c1_0 
+    where
+        c1_0.name=?
+02:34:37.329 [main] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [Rapid Spring Boot Application Development]
+```
+
+특정 컬럼만 조회해도록 쿼리가 만들어짐을 확인했다.
+
+
+
 
 
 

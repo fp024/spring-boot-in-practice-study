@@ -8,23 +8,32 @@ import jakarta.persistence.EntityManager;
 import java.util.Arrays;
 import java.util.List;
 import org.assertj.core.util.Lists;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.TestInstance.Lifecycle;
 import org.springboot.practice.model.Course;
 import org.springboot.practice.model.QCourse;
 import org.springboot.practice.repository.CourseRepository;
+import org.springboot.practice.repository.projection.DescriptionOnly;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
+@TestInstance(Lifecycle.PER_CLASS)
 class CourseTrackerSpringBootApplicationTests {
 
   @Autowired private CourseRepository courseRepository;
 
   @Autowired private EntityManager entityManager;
 
+  @BeforeAll
+  void initData() {
+    courseRepository.saveAll(getCourseList());
+  }
+
   @Test
   void givenCoursesCreatedWhenLoadCoursesWithQueryThenExpectCorrectCourseDetails() {
-    courseRepository.saveAll(getCourseList());
 
     QCourse course = QCourse.course;
     JPAQuery<Course> query1 = new JPAQuery<>(entityManager);
@@ -42,6 +51,20 @@ class CourseTrackerSpringBootApplicationTests {
     OrderSpecifier<Integer> descOrderSpecifier = course.rating.desc();
     assertThat(Lists.newArrayList(courseRepository.findAll(descOrderSpecifier)).get(0).getName())
         .isEqualTo("Getting Started with Spring Security DSL");
+  }
+
+  /** 3.7.2 기법: 프로젝션 - 테스트 */
+  @Test
+  void givenACourseAvailableWhenGetCourseByNameThenGetCourseDescription() {
+
+    Iterable<DescriptionOnly> result =
+        courseRepository.getCourseByName("Rapid Spring Boot Application Development");
+
+    assertThat(result)
+        .extracting("description")
+        .contains(
+            "Spring Boot gives all the power of the Spring Framework without all of the"
+                + " complexity");
   }
 
   private List<Course> getCourseList() {
