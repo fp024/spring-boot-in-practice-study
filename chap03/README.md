@@ -148,6 +148,39 @@ name이 C로시작하는것이 항상 오름차순 기준 첫번째이므로 그
 
 
 
+### 3.7.1 기법: 관계형 데이터베이스에 저장된 도메인 객체를 QueryDSL로 관리
+
+💡spring boot  3.x + gradle 환경에서는 다음과 같이 설정
+
+````groovy
+  implementation ("com.querydsl:querydsl-jpa") {
+    artifact {
+      classifier = 'jakarta'
+    }
+  }
+  annotationProcessor (
+    'jakarta.persistence:jakarta.persistence-api', 
+    'jakarta.annotation:jakarta.annotation-api'
+  )
+  annotationProcessor ("com.querydsl:querydsl-apt") {
+    artifact {
+      classifier = 'jakarta'
+    }
+  }
+````
+
+코드 정리가 되면... 쿼리(Q)타입 도메인 생성을 위해 다음 명령을 실행해주자!
+
+```sh
+gradle clean classes
+```
+
+
+
+
+
+
+
 
 
 ## 의견

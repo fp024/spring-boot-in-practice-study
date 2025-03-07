@@ -1,0 +1,9 @@
+rootProject.name = 'using-query-dsl'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}
