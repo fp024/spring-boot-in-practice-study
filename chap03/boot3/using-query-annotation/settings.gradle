@@ -1,0 +1,9 @@
+rootProject.name = 'using-query-annotation'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}
