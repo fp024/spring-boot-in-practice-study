@@ -1,0 +1,9 @@
+rootProject.name = 'custom-query-methods'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../../gradle/libs.versions.toml"))
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CourseTrackerSpringBootApplication",
+      "request": "launch",
+      "mainClass": "org.springboot.practice.CourseTrackerSpringBootApplication",
+      "projectName": "custom-query-methods"
+    }
+  ]
+}

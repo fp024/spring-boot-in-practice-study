@@ -65,7 +65,7 @@ CREATE TABLE COURSES
 
 
 
-### 3.3.1 기법: 스프링 데이터 JPA를 사용해서 도메인 객체를 관계형 데이터베이스에서 관리
+### 3.3.1 기법: 스프링 데이터 JPA를 사용해서 도메인 객체를 관계형 데이터베이스에
 
 ### 💡 id로 정수를 쓸 경우 레퍼타입을 사용할 것!
 
@@ -93,6 +93,29 @@ Optional의 isPresent() 결과도 직접 검사하는 메서드가 있다.
 ```java
 assertThat(courseRepository.findById(savedCourse.getId())) //
     .isNotPresent();
+```
+
+
+
+### 3.4.2 기법: 관계형 데이터베이스에서 스프링 데이터 JPA를 사용한 커스텀 쿼리 메서드 정의
+
+```java
+Stream<Course> streamAllByCategory(String category);
+```
+
+스트림에 대해서 테스트를 할 때는 `@Transactional`을 설정해줘야한다.
+
+```
+org.springframework.dao.InvalidDataAccessApiUsageException: You're trying to execute a streaming query method without a surrounding transaction that keeps the connection open so that the Stream can actually be consumed; Make sure the code consuming the stream uses @Transactional or any other way of declaring a (read-only) transaction
+```
+
+```java
+  @Transactional
+  @Test
+  void streamAllByCategory() {
+    courseRepository.saveAll(getCourseList());
+    assertThat(courseRepository.streamAllByCategory("Spring")).hasSize(3);
+  }
 ```
 
 
