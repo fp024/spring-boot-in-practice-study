@@ -196,7 +196,59 @@ Hibernate:
 
 
 
+### 3.8.1 기법: 스프링 데이터 JPA를 사용해서 관계형 데이터베이스에서 다대다 관계 도메인 객체 관리
 
+**@ManyToMany**로 다대다 설정 이후, 해당 Join 테이블에 대해 또다시 엔티티를 별도로 만드는 것은 처음 본것 같다.
+
+AuthorCourse 클레스가 그렇게 되어있다...
+
+이런 경우, **@ManyToMany**를 쓰지 않고...  Join 테이블에서 각각으로 **@ManyToOne**으로 연결하는 것만 보아와서 생소하긴하다. 😅
+
+> ✨ 이후 내용까지 보았을 때... 이렇게 만든 이유는... 아마도.. AuthorRepository의 JPQL에서 사용하기위해서 엔티티 정의를 따로 한 것 같다.
+
+
+
+#### ✨ Spring Boot 3 환경의 Hibernate 6에서는 insertable와 updatable 설정이 동일한 속성으로 설정되길 강제한다.
+
+```
+Caused by: org.hibernate.AnnotationException: Join column 'author_id' on collection property 'org.springboot.practice.model.Author.courses' must be defined with the same insertable and updatable attributes
+```
+
+```java
+  @ToString.Exclude
+  @ManyToMany
+  @JoinTable(
+      name = "authors_courses",
+      joinColumns = {
+        @JoinColumn(
+            name = "author_id",
+            referencedColumnName = "id",
+            nullable = false,
+            insertable = false, // 💡insertable도 명시적으로 false가 되도록 했다.
+            updatable = false)  // 💡
+      },
+      inverseJoinColumns = {
+        @JoinColumn(
+            name = "course_id",
+            referencedColumnName = "id",
+            nullable = false,
+            insertable = false,  // 💡
+            updatable = false)   // 💡
+      })
+  private Set<Course> courses = new HashSet<>();
+```
+
+이렇게 했을 때... Join 테이블의 데이터 입력은 오직 관계 설정으로만 입력되고,  직접 입력은 할 수 없다.
+
+
+
+💡 아래를 설정하지 않아도, 지금 DB가 h2여서인지.. schema.sql와 data.sql이 자동 등록은 되었다.
+
+```yml
+  sql:
+    init:
+      mode: always
+```
 
 
 
@@ -207,6 +259,11 @@ Hibernate:
 나에게 유용했던 내용
 
 * p99에 DB 플렛폼 ID를 파일이름에 포함시켜서 sql 파일들을 나눠서 만들수 있다는 점.
+* 3.8.1 기법: @ManyToMany 예제
+  * 일대다에서는 참조를 적게 가질 수 있는 쪽을 관계를 가지게 설계 (다쪽이 관계를 가짐)
+  * 다대다의 경우는 논리적으로 소유한다는 관점이 있는 엔티티에 @JoinTable 설정
+    * 강사(Author), 강좌(Course) 둘중에 강사에 @JoinTable 설정
+
 
 
 
