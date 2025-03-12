@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-boot-actuator-custom-status-mapper
+
+logging:
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} [%thread] %clr(%-5level) %clr(%logger{72}){cyan} - %msg%n"
+  level:
+    root: info
+    web: debug
+    "[org.springboot.practice]": debug
+
+management:
+  endpoint:
+    health:
+      show-details: always
+      status:
+        http-mapping:
+          down: 500
+          "[out_of_service]": 503
+  server:
+    port: 8081

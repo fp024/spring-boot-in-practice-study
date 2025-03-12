@@ -1,0 +1,9 @@
+rootProject.name = 'spring-boot-actuator-custom-status-mapper'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../gradle/libs.versions.toml"))
+    }
+  }
+}

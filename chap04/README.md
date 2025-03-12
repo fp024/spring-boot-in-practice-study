@@ -211,6 +211,56 @@ http://localhost:8081/sbip/caches
 
 
 
+#### 4.4.4 Health 엔드포인트 탐구
+
+> 예제: [spring-boot-actuator-custom-status-mapper](spring-boot-actuator-custom-status-mapper)
+
+💡p181의 DB정보를 확인하려면, h2만 디펜던시에 적용했다고 자동으로 되는 것은 아니고, `spring-boot-starter-data-jpa`도 추가되서, Embedded 설정이 자동으로 완료되야 나타나는 것으로 보인다.
+
+
+
+지금 예제 생태가 DownHealthIndicator에서 health 상태를 DOWN으로 나타나게 해서, 살아 있는데, DOWN으로 표시된다. 😅
+
+```json
+{
+  "status": "DOWN",
+  "components": {
+    "db": {
+      "status": "UP",
+      "details": {
+        "database": "H2",
+        "validationQuery": "isValid()"
+      }
+    },
+    "diskSpace": {
+      "status": "UP",
+      "details": {
+        "total": ***,
+        "free": ***,
+        "threshold": ***,
+        "path": "***",
+        "exists": true
+      }
+    },
+    "down": {
+      "status": "DOWN"
+    },
+    "ping": {
+      "status": "UP"
+    },
+    "ssl": {
+      "status": "UP",
+      "details": {
+        "validChains": [],
+        "invalidChains": []
+      }
+    }
+  }
+}
+```
+
+이번 예제는 약간 설명을 너무 간단하게 하신 것 같음.. 😂
+
 
 
 
