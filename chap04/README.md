@@ -263,6 +263,55 @@ http://localhost:8081/sbip/caches
 
 
 
+#### 4.4.6 기법: 커스텀 부트 액추에이터 HealthIndicator 정의
+
+> 예제: [custom-healthindicator](custom-healthindicator)
+
+나는 애플리케이션 시작시점에 외부 API를 체크하는 줄 알았다...  그런데, 그건 아니고,
+
+health 엔드포인트에 접근 할 때 같이 체크한다.
+
+* http://localhost:8081/actuator/health
+
+```json
+{
+  "status": "UP",
+  "components": {
+    "diskSpace": {
+      "status": "UP",
+      "details": {
+        "total": ***,
+        "free": ***,
+        "threshold": ***,
+        "path": ***,
+        "exists": true
+      }
+    },
+    "dogsApi": {  // 💡 HealthIndicator 앞에 붙인 클래스 명으로 자동으로 만들어줌
+      "status": "UP",
+      "details": {  // API 호출 결과
+        "message": "https://images.dog.ceo/breeds/stbernard/n02109525_8822.jpg",
+        "status": "success"
+      }
+    },
+    "ping": {
+      "status": "UP"
+    },
+    "ssl": {
+      "status": "UP",
+      "details": {
+        "validChains": [],
+        "invalidChains": []
+      }
+    }
+  }
+}
+```
+
+
+
+
+
 
 
 ## 의견
