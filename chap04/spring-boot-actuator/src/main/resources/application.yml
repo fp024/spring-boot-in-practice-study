@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: spring-boot-actuator
+
+logging:
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} [%thread] %clr(%-5level) %clr(%logger{72}){cyan} - %msg%n"
+  level:
+    root: info
+    web: debug
+    "[org.springboot.practice]": debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+        exclude:
+          # - threaddump
+          # - heapdump
+          # - health
+      base-path: /sbip
+      path-mapping:
+        health: apphealth
+  server:
+    port: 8081
