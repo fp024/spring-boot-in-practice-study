@@ -289,7 +289,7 @@ health 엔드포인트에 접근 할 때 같이 체크한다.
     },
     "dogsApi": {  // 💡 HealthIndicator 앞에 붙인 클래스 명으로 자동으로 만들어줌
       "status": "UP",
-      "details": {  // API 호출 결과
+      "details": {  // 외부 API 호출 결과
         "message": "https://images.dog.ceo/breeds/stbernard/n02109525_8822.jpg",
         "status": "success"
       }
@@ -309,6 +309,111 @@ health 엔드포인트에 접근 할 때 같이 체크한다.
 ```
 
 
+
+#### 4.5.1 기법: 스프링 부트 액추에이터 info 엔드포인트 설정
+
+> 예제: [spring-boot-actuator-info-endpoint](spring-boot-actuator-info-endpoint)
+
+진행을 먼저 해보니 아무래도 maven 빌드 프로젝트로 만들어야 저자님과 동일하게 될 것 같다.
+
+일단 gradle 빌드 프로젝트로 해보았을 때..
+
+info이하의 build 값 설정은 어차피 build.gradle의 buildInfo() 설정이 우선이 되어서 의미가 없었다.
+
+```yml
+info:
+  app:
+    name: Spring Boot Actuator Info Application
+    description: Spring Boot application that explores the /info endpoint
+    version: 1.0.0
+  # 💡 여기에 build 정보를 적는 것은 별의미가 없었다.
+  #     build.gradle의 buildInfo() 설정이 우선이 되었다.
+```
+
+
+
+그외에 프로젝트의 Java 정보의 경우는 ..
+
+```java
+management:
+  info:
+    java:
+      enabled: true
+```
+
+이런식으로 설정해줘야 했었다.
+
+
+
+git 커밋 정보 프로퍼티를 만들어주는 플러그인 관련해서는 다음 gradle용 플러그인이 있긴한데..
+
+mvn repo에 공식 배포가 안되어있어서, 로컬에 배포해서 해야할 것 같다? 😂
+
+* https://github.com/git-commit-id/git-commit-id-gradle-plugin
+  
+
+- [ ] 💡지금 당장 완전하게 할 필요는 없어보이고, 나중에 Maven 프로젝트로 만들어서 해보자! 😅
+
+
+
+#### 4.5.2 기법: 애플리케이션 정보를 표시하는 커스텀 InfoContributor
+
+> 예제: [spring-boot-actuator-info-endpoint](spring-boot-actuator-info-endpoint)
+>
+> **4.5.1 기법**과 예제가 동일하다.
+
+http://localhost:8081/actuator/info 호출 결과
+
+```json
+{
+  "app": {
+    "name": "Spring Boot Actuator Info Application",
+    "description": "Spring Boot application that explores the /info endpoint",
+    "version": "1.0.0"
+  },
+  "build": {
+    "artifact": "spring-boot-actuator-info-endpoint",
+    "name": "spring-boot-actuator-info-endpoint",
+    "time": ***,
+    "version": "0.0.1-SNAPSHOT",
+    "group": "org.springboot.practice"
+  },
+  "java": {
+    "version": "21.0.6",
+    "vendor": {
+      "name": "Eclipse Adoptium",
+      "version": "Temurin-21.0.6+7"
+    },
+    "runtime": {
+      "name": "OpenJDK Runtime Environment",
+      "version": "21.0.6+7-LTS"
+    },
+    "jvm": {
+      "name": "OpenJDK 64-Bit Server VM",
+      "vendor": "Eclipse Adoptium",
+      "version": "21.0.6+7-LTS"
+    }
+  },
+  "courses": [ // 💡
+    {
+      "name": "Rapid Spring Boot Application Development",
+      "rating": 4
+    },
+    {
+      "name": "Getting Started with Spring Security DSL",
+      "rating": 5
+    },
+    {
+      "name": "Getting Started with Spring Cloud Kubernetes",
+      "rating": 3
+    }
+  ]
+}
+```
+
+💡 courses 부분 정보가 노출된 것을 확인 할 수 있다.
+
+✨ 그래도 비즈니스 도메인 정보는 REST API로 관리하는 것이 좋음
 
 
 

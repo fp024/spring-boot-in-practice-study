@@ -1,0 +1,9 @@
+rootProject.name = 'spring-boot-actuator-info-endpoint'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../gradle/libs.versions.toml"))
+    }
+  }
+}
