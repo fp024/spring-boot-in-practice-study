@@ -417,6 +417,41 @@ http://localhost:8081/actuator/info 호출 결과
 
 
 
+#### 4.6.1 기법: 커스텀 스프링 부트 액추에이터 생성
+
+> 예제: [custom-endpoint](custom-endpoint)
+
+`@Endpoint(id = "releaseNotes")`로 쓰고, releaseNotes를 JMX로도 노출시켜주면 http, jmx 둘다 사용이 가능했다.
+
+```yml
+spring:
+  application:
+    name: custom-endpoint
+  jmx:
+    enabled: true # 💡
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: # Expose the /releaseNotes actuator endpoint over HTTP
+          - releaseNotes
+    jmx:
+      exposure:
+        include: 💡
+          - releaseNotes
+```
+
+
+
+![image-20250313224049652](doc-resources/image-20250313224049652.png)
+
+💡 web테스트는 REST Client로 테스트가 되도록 endpoint-test/endpoint.rest 파일에 작성했음.
+
+* [endpoint.rest](custom-endpoint/endpoint-test/endpoint.rest)
+
+
+
 
 
 ## 의견

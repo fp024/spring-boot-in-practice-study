@@ -1,0 +1,9 @@
+rootProject.name = 'custom-endpoint'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../gradle/libs.versions.toml"))
+    }
+  }
+}

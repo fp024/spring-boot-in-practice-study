@@ -1,0 +1,37 @@
+# REST Client VSCode 플러그인: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+#####################
+# 액츄에이터 테스트 #
+#####################
+@baseHost = http://localhost:8080
+
+###
+# /actuator
+GET {{baseHost}}/actuator HTTP/1.1
+Content-Type: application/json
+Accept-Language: ko
+
+
+###
+# v1.2.0으로 조회: /actuator/releaseNotes/v1.2.0
+GET {{baseHost}}/actuator/releaseNotes/v1.2.0 HTTP/1.1
+Content-Type: application/json
+Accept-Language: ko
+
+
+###
+# v1.2.1로 조회: /actuator/releaseNotes/v1.2.1
+GET {{baseHost}}/actuator/releaseNotes/v1.2.1 HTTP/1.1
+Content-Type: application/json
+Accept-Language: ko
+
+
+###
+# 없는 버전으로 조회: /actuator/releaseNotes/vNoVersion
+GET {{baseHost}}/actuator/releaseNotes/vNoVersion HTTP/1.1
+Content-Type: application/json
+Accept-Language: ko
+
+
+###
+# 삭제: v1.2.1 버전 삭제
+DELETE {{baseHost}}/actuator/releaseNotes/v1.2.1 HTTP/1.1
