@@ -452,6 +452,176 @@ management:
 
 
 
+#### 4.6.2 스프링 부트 액추에이터 메트릭
+
+> 예제: [spring-boot-actuator-metrics](spring-boot-actuator-metrics)
+
+#### 측정 지표 목록 확인: 
+
+* http://localhost:8080/actuator/metrics
+
+```
+{
+  "names": [
+    "api.courses.created.count",
+    "application.ready.time",
+    "application.started.time",
+    "disk.free",
+    "disk.total",
+    "executor.active",
+    "executor.completed",
+    "executor.pool.core",
+    "executor.pool.max",
+    "executor.pool.size",
+    "executor.queue.remaining",
+    "executor.queued",
+    "hikaricp.connections",
+    "hikaricp.connections.acquire",
+    "hikaricp.connections.active",
+    "hikaricp.connections.creation",
+    "hikaricp.connections.idle",
+    "hikaricp.connections.max",
+    "hikaricp.connections.min",
+    "hikaricp.connections.pending",
+    "hikaricp.connections.timeout",
+    "hikaricp.connections.usage",
+    "http.server.requests",
+    "http.server.requests.active",
+    "jdbc.connections.active",
+    "jdbc.connections.idle",
+    "jdbc.connections.max",
+    "jdbc.connections.min",
+    "jvm.buffer.count",
+    "jvm.buffer.memory.used",
+    "jvm.buffer.total.capacity",
+    "jvm.classes.loaded",
+    "jvm.classes.unloaded",
+    "jvm.compilation.time",
+    "jvm.gc.live.data.size",
+    "jvm.gc.max.data.size",
+    "jvm.gc.memory.allocated",
+    "jvm.gc.memory.promoted",
+    "jvm.gc.overhead",
+    "jvm.gc.pause",
+    "jvm.info",
+    "jvm.memory.committed",
+    "jvm.memory.max",
+    "jvm.memory.usage.after.gc",
+    "jvm.memory.used",
+    "jvm.threads.daemon",
+    "jvm.threads.live",
+    "jvm.threads.peak",
+    "jvm.threads.started",
+    "jvm.threads.states",
+    "logback.events",
+    "process.cpu.time",
+    "process.cpu.usage",
+    "process.start.time",
+    "process.uptime",
+    "system.cpu.count",
+    "system.cpu.usage",
+    "tomcat.sessions.active.current",
+    "tomcat.sessions.active.max",
+    "tomcat.sessions.alive.max",
+    "tomcat.sessions.created",
+    "tomcat.sessions.expired",
+    "tomcat.sessions.rejected"
+  ]
+}
+```
+
+
+
+##### GC 중단 정보 확인
+
+✨ 그런데, 예제 프로그램을 시작하고나서 GC가 한번도 일어나지 않았으면 접근할 수가 없다. 한번 이상 GC가 일어나야 접근이 가능하다.
+
+* http://localhost:8080/actuator/metrics/jvm.gc.pause
+
+  ```json
+  {
+    "name": "jvm.gc.pause",
+    "description": "Time spent in GC pause",
+    "baseUnit": "seconds",
+    "measurements": [
+      {
+        "statistic": "COUNT",
+        "value": 1
+      },
+      {
+        "statistic": "TOTAL_TIME",
+        "value": 0.007
+      },
+      {
+        "statistic": "MAX",
+        "value": 0
+      }
+    ],
+    "availableTags": [
+      {
+        "tag": "cause",
+        "values": [
+          "G1 Evacuation Pause"
+        ]
+      },
+      {
+        "tag": "action",
+        "values": [
+          "end of minor GC"
+        ]
+      },
+      {
+        "tag": "gc",
+        "values": [
+          "G1 Young Generation"
+        ]
+      },
+      {
+        "tag": "applicationName",
+        "values": [
+          "course-tracker"
+        ]
+      }
+    ]
+  }
+  ```
+
+
+
+#### 태그를 사용한 측정지표 필터링
+
+* http://localhost:8080/actuator/metrics/jvm.buffer.memory.used?tag=applicationName:course-tracker
+
+  ```json
+  {
+    "name": "jvm.buffer.memory.used",
+    "description": "An estimate of the memory that the Java virtual machine is using for this buffer pool",
+    "baseUnit": "bytes",
+    "measurements": [
+      {
+        "statistic": "VALUE",
+        "value": 81920
+      }
+    ],
+    "availableTags": [
+      {
+        "tag": "id",
+        "values": [
+          "mapped - 'non-volatile memory'",
+          "direct",
+          "mapped"
+        ]
+      }
+    ]
+  }
+  ```
+
+  ✨ 쿼리스트링이 정확하지 않으면 404응답을 받게된다.
+
+
+
+
+
 
 
 ## 의견

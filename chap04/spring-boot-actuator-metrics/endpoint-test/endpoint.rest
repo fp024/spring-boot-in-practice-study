@@ -1,0 +1,25 @@
+# REST Client VSCode 플러그인: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+#################
+# 메트릭 테스트 #
+#################
+@baseHost = http://localhost:8080
+
+###
+# /courses 카운트 증가
+POST {{baseHost}}/courses HTTP/1.1
+Content-Type: application/json
+Accept-Language: ko
+
+{
+  "id": 1,
+  "name": "Rapid Spring Boot Application Development",
+  "category": "Spring",
+  "rating": 4,
+  "description": "Learn Enterprise Application Development with Spring Boot"
+}
+
+###
+# api.courses.created.count
+# 카운트 증가를 시킨후 값을 확인해보면 증가되는 것을 확인할 수 있다.
+GET {{baseHost}}/actuator/metrics/api.courses.created.count HTTP/1.1
+Accept-Language: ko
