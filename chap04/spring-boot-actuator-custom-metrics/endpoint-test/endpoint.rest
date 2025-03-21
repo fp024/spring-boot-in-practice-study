@@ -5,21 +5,41 @@
 @baseHost = http://localhost:8080
 
 ###
-# /courses 카운트 증가
-POST {{baseHost}}/courses HTTP/1.1
-Content-Type: application/json
-Accept-Language: ko
+# Course 데이터 입력
+# http://localhost:8080/index Web UI에서 직접 입력하는게 편하다.
 
-{
-  "id": 1,
-  "name": "Rapid Spring Boot Application Development",
-  "category": "Spring",
-  "rating": 4,
-  "description": "Learn Enterprise Application Development with Spring Boot"
-}
 
 ###
+# Counter
 # api.courses.created.count
 # 카운트 증가를 시킨후 값을 확인해보면 증가되는 것을 확인할 수 있다.
+# 애플리케이션을 시작하고 만든 것의 카운트.
 GET {{baseHost}}/actuator/metrics/api.courses.created.count HTTP/1.1
+Accept-Language: ko
+
+
+
+###
+# Gauge
+# api.courses.created.gauge
+# 애플리케이션을 재시작 하더라도, DB에서 기존의 count값을 가져오기 때문에, 값이 유지된다.
+GET {{baseHost}}/actuator/metrics/api.courses.created.gauge HTTP/1.1
+Accept-Language: ko
+
+
+
+###
+# Timer
+# api.courses.creation.time
+# Course 저장동작에 타이머가 설정되어있다, 전체시간, 개별의 최대 수행시간등을 볼 수 있다.
+GET {{baseHost}}/actuator/metrics/api.courses.creation.time HTTP/1.1
+Accept-Language: ko
+
+
+
+###
+# Distribution Summary
+# api.courses.rating.distribution.summary
+# 
+GET {{baseHost}}/actuator/metrics/api.courses.rating.distribution.summary HTTP/1.1
 Accept-Language: ko

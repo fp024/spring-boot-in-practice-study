@@ -6,19 +6,20 @@ spring:
       filter:
         enabled: true
   datasource:
+    # url: jdbc:h2:file:./h2-file-db/sbipdb
     url: jdbc:h2:mem:sbipdb
     driver-class-name: org.h2.Driver
     username: sa
     password: password
   sql:
     init:
-      mode: always
+      mode: never
   h2:
     console:
       enabled: true
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
     show-sql: true
     open-in-view: false
     properties:

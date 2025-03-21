@@ -624,6 +624,55 @@ management:
 
 > 예제: [spring-boot-actuator-custom-metrics](spring-boot-actuator-custom-metrics)
 
+* H2는 재시작해도 내용이 기록되도록 file모드로 바꿔서 설정했다.
+
+  ```yaml
+    datasource:
+      url: jdbc:h2:file:./h2-file-db/sbipdb
+      driver-class-name: org.h2.Driver
+      username: sa
+      password: password
+  ```
+
+  * 프로젝트 루트이하에 h2-file-db/sbipdb 경로/파일로 DB 파일이 생김
+  * 그런데.. 아무래도 h2-console 다중 접속을 하려면... 메모리를 유지하는게 낫긴함.
+
+
+
+#### Distribution
+
+데이터를 아래와 같이 넣고...
+
+![image-20250322072242698](doc-resources/image-20250322072242698.png)
+
+분포 요약을 테스트 해봤을 때...
+
+```json
+{
+  "name": "api.courses.rating.distribution.summary",
+  "description": "Rating distribution summary",
+  "measurements": [
+    {
+      "statistic": "COUNT",
+      "value": 5.0
+    },
+    {
+      "statistic": "TOTAL",
+      "value": 15.0
+    }
+  ],
+  "availableTags": []
+}
+```
+
+COUNT, TOTAL은 예상대로 잘 나왔는데... 
+
+**💡TODO:** 저자님의 경우는 최고 평점을 의미하는 MAX 항목이 있었는데, 내 환경(Boot 3.4.4)은 나타나지 않는다. 
+
+
+
+
+
 
 
 #### 4.6.4 프로메테우스와 그라파나를 사용한 측정지표 대시보드
