@@ -1,0 +1,9 @@
+rootProject.name = 'spring-boot-actuator-custom-metrics'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../gradle/libs.versions.toml"))
+    }
+  }
+}

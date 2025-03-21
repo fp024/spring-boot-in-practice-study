@@ -620,6 +620,16 @@ management:
 
 
 
+#### 4.6.3 커스텀 측정 지표 생성
+
+> 예제: [spring-boot-actuator-custom-metrics](spring-boot-actuator-custom-metrics)
+
+
+
+#### 4.6.4 프로메테우스와 그라파나를 사용한 측정지표 대시보드
+
+> * ...
+
 
 
 
