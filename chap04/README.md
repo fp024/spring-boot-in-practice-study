@@ -10,7 +10,7 @@
 
 * https://github.com/spring-boot-in-practice/repo/tree/main/ch04
 
-⬜ 한번 읽어보기
+✅ 한번 읽어보기
 
 
 
