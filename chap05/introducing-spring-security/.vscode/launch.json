@@ -1,0 +1,13 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CourseTrackerSpringBootApplication",
+      "request": "launch",
+      "mainClass": "org.springboot.practice.CourseTrackerSpringBootApplication",
+      "projectName": "introducing-spring-security"
+    }
+  ]
+  
+
+}

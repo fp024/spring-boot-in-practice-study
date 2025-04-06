@@ -1,0 +1,11 @@
+.icon-color {
+  background-color: black;
+}
+
+.brand-text {
+  font-size: x-large;
+}
+
+.table-top-border {
+  border-top: 1px solid #dee2e6; /* 원하는 테두리 스타일 및 색상 지정 */
+}

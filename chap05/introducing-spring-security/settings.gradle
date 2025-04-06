@@ -1,0 +1,9 @@
+rootProject.name = 'introducing-spring-security'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../gradle/libs.versions.toml"))
+    }
+  }
+}

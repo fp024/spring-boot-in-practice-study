@@ -1,0 +1,19 @@
+{
+  "name": "init-project-for-vscode-java-environment",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.7.0+sha512.6b865ad4b62a1d9842b61d674a393903b871d9244954f652b8842c2b553c72176b278f64c463e52d40fff8aba385c235c8c9ecf5cc7de4fd78b8bb6d49633ab6",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "format": "pnpm prettier --write \"./**/*.{html,css,js,jsx,ts,tsx,json,vue}\"",
+    "add-javac-parameters-option": "node scripts/addJavacParametersOption.js",
+    "copy-mockito-jar": "node scripts/runGradleWrapper.js copyMockitoJar",
+    "init-test-jvm-options": "node scripts/initTestJvmOptions.js",
+    "init-project": "pnpm add-javac-parameters-option && pnpm copy-mockito-jar && pnpm init-test-jvm-options"
+  },
+  "devDependencies": {
+    "comment-json": "^4.2.5",
+    "prettier": "^3.5.3"
+  }
+}
