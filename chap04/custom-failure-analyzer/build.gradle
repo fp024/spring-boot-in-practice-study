@@ -1,6 +1,6 @@
 plugins {
   id 'java'
-  alias(libs.plugins.spring.boot.v3dot4)
+  alias(libs.plugins.spring.boot.v3.latest)
   alias(libs.plugins.spring.dependency.management)
 }
 

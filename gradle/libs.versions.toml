@@ -3,8 +3,8 @@
 [versions]
 ##### plugins versions #####
 
-# Spring Boot 3.4.x의 최신 버전 #
-spring-boot-v3dot4-plugin = "3.4.4"
+# Spring Boot 3.x의 최신 버전 #
+spring-boot-v3-latest-plugin = "3.4.4"
 
 # https://github.com/spring-gradle-plugins/dependency-management-plugin
 spring-dependency-management-plugin = "1.1.7"
@@ -18,7 +18,7 @@ spring-cloud-dependencies = "2024.0.1"
 passay = "1.6.6"
 
 # https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo.spring
-embedded-mongo-spring3x = "4.18.0"
+embedded-mongo-spring3x = "4.20.0"
 
 ### WebJars ###
 # https://mvnrepository.com/artifact/org.webjars/webjars-locator
@@ -46,6 +46,6 @@ webjars-font-awesome = { module = "org.webjars:font-awesome", version.ref = "web
 
 
 [plugins]
-spring-boot-v3dot4 = { id = "org.springframework.boot", version.ref = "spring-boot-v3dot4-plugin" }
+spring-boot-v3-latest = { id = "org.springframework.boot", version.ref = "spring-boot-v3-latest-plugin" }
 
 spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management-plugin" }
