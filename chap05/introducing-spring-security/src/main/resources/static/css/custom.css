@@ -6,6 +6,7 @@
   font-size: x-large;
 }
 
+/* 💡 BS4에서 BS5로 넘어오면서, 테이블 제목 top의 border가 표시가 안되서 추가했다. */
 .table-top-border {
   border-top: 1px solid #dee2e6; /* 원하는 테두리 스타일 및 색상 지정 */
 }
