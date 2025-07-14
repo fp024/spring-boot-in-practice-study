@@ -18,6 +18,7 @@ class CourseTrackerSpringBootApplicationTests {
 
   @Autowired private CourseRepository courseRepository;
 
+  @Transactional
   @Test
   void givenCreateCourseWhenLoadTheCourseThenExpectSameCourse() {
     courseRepository.saveAll(getCourseList());

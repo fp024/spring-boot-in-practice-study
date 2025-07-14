@@ -8,12 +8,12 @@ importers:
 
   .:
     devDependencies:
-      comment-json:
-        specifier: ^4.2.5
-        version: 4.2.5
       prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
+        specifier: 3.6.2
+        version: 3.6.2
+      vscode-java-setup-scripts:
+        specifier: github:fp024/vscode-java-setup-scripts#v1.0.2
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/db01e7f55b110f778faf5806444af17cdbb1db02
 
 packages:
 
@@ -36,14 +36,20 @@ packages:
     resolution: {integrity: sha512-Pq0h+hvsVm6dDEa8x82GnLSYHOzNDt7f0ddFa3FqcQlgzEiptPqL+XrOJNavjOzSYiYWIrgeVYYgGlLmnxwilQ==}
     engines: {node: '>=8'}
 
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
   repeat-string@1.6.1:
     resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
     engines: {node: '>=0.10'}
+
+  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/db01e7f55b110f778faf5806444af17cdbb1db02:
+    resolution: {tarball: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/db01e7f55b110f778faf5806444af17cdbb1db02}
+    version: 1.0.2
+    engines: {node: '>=16.17.0'}
+    hasBin: true
 
 snapshots:
 
@@ -63,6 +69,10 @@ snapshots:
 
   has-own-prop@2.0.0: {}
 
-  prettier@3.5.3: {}
+  prettier@3.6.2: {}
 
   repeat-string@1.6.1: {}
+
+  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/db01e7f55b110f778faf5806444af17cdbb1db02:
+    dependencies:
+      comment-json: 4.2.5

@@ -18,7 +18,7 @@ public interface CourseRepository extends CrudRepository<Course, Long> {
   Iterable<Course> findAllByCategoryAndRatingGreaterThan(
       @Param("category") String category, @Param("rating") int rating);
 
-  @Query(value = "select * from COURSE where rating=?1", nativeQuery = true)
+  @Query(value = "select * from courses where rating=?1", nativeQuery = true)
   Iterable<Course> findAllByRating(int rating);
 
   @Modifying
