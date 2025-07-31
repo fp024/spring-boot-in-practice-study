@@ -4,7 +4,7 @@
 ##### plugins versions #####
 
 # Spring Boot 3.x의 최신 버전 #
-spring-boot-v3-latest-plugin = "3.5.3"
+spring-boot-v3-latest-plugin = "3.5.4"
 
 # https://github.com/spring-gradle-plugins/dependency-management-plugin
 spring-dependency-management-plugin = "1.1.7"
@@ -18,7 +18,7 @@ spring-cloud-dependencies = "2025.0.0"
 passay = "1.6.6"
 
 # https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo.spring
-embedded-mongo-spring3x = "4.20.0"
+embedded-mongo-spring3x = "4.21.0"
 
 ### WebJars ###
 # https://mvnrepository.com/artifact/org.webjars/webjars-locator
