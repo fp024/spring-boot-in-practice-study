@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "type": "module",
   "private": "true",
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.14.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "format": "prettier --write \"./**/*.{html,css,js,json}\"",
     "add-javac-parameters-option": "add-javac-parameters-option",
+    "copy-mockito-agent-gradle": "copy-mockito-agent-gradle",
     "copy-mockito-jar": "run-gradle-wrapper copyMockitoJar",
     "init-test-jvm-options": "init-test-jvm-options",
     "init-project": "pnpm run add-javac-parameters-option && pnpm run copy-mockito-jar && pnpm run init-test-jvm-options"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "vscode-java-setup-scripts": "github:fp024/vscode-java-setup-scripts#v1.0.2"
+    "vscode-java-setup-scripts": "github:fp024/vscode-java-setup-scripts#v0.1.0"
   }
 }
