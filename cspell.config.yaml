@@ -7,6 +7,7 @@ words:
   - enableextensions
   - errorlevel
   - healthindicator
+  - Metaspace
   - popd
   - pushd
   - setlocal

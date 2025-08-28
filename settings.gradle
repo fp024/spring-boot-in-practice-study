@@ -1,0 +1,43 @@
+rootProject.name = 'spring-boot-in-practice-study'
+
+// Chapter 1 스프링 부트 시작하기
+include 'chap01:chap01-boot3'
+
+// Chapter 2 스프링 부트 공통 작업
+include 'chap02:boot3:bean-validation'
+include 'chap02:boot3:bean-validation-custom-annotation'
+include 'chap02:boot3:command-line-runner:spring-boot-app-final'
+include 'chap02:boot3:config-data-file'
+include 'chap02:boot3:configuration-properties'
+include 'chap02:boot3:os-env-variables'
+include 'chap02:boot3:property-sources'
+include 'chap02:boot3:spring-application'
+include 'chap02:boot3:spring-boot-default-logging:spring-boot-app-final'
+include 'chap02:boot3:spring-boot-logging-with-log4j2:spring-boot-app-final'
+
+// Chapter 3 스프링 데이터를 사용한 데이터베이스 접근
+include 'chap03:boot3:configuring-mongodb-database'
+include 'chap03:boot3:configuring-relational-database'
+include 'chap03:boot3:creating-custom-spring-data-repository'
+include 'chap03:boot3:custom-query-methods'
+include 'chap03:boot3:initialize-relational-database-with-schema'
+include 'chap03:boot3:manage-domain-objects-with-jpa'
+include 'chap03:boot3:managing-many-to-many-relationship'
+include 'chap03:boot3:named-query-method'
+include 'chap03:boot3:using-criteria-api'
+include 'chap03:boot3:using-paging-and-sorting-repository'
+include 'chap03:boot3:using-query-annotation'
+include 'chap03:boot3:using-query-dsl'
+
+// Chapter 4 스프링 자동 구성과 액추에이터
+include 'chap04:custom-endpoint'
+include 'chap04:custom-failure-analyzer'
+include 'chap04:custom-healthindicator'
+include 'chap04:spring-boot-actuator'
+include 'chap04:spring-boot-actuator-custom-metrics'
+include 'chap04:spring-boot-actuator-custom-status-mapper'
+include 'chap04:spring-boot-actuator-info-endpoint'
+include 'chap04:spring-boot-actuator-metrics'
+
+// Chapter 5 스프링 부트 애플리케이션 보안
+include 'chap05:introducing-spring-security'
