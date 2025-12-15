@@ -13,10 +13,7 @@
     "/docs/database.md",
     "pnpm-lock.yaml"
   ],
-  "words": [
-    "TINYINT",
-    "varchar"
-  ],
+  "words": ["TINYINT", "varchar"],
   "ignoreWords": [
     "springboot",
     "codegen",

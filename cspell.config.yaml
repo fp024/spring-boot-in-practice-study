@@ -6,6 +6,7 @@ words:
   - enabledelayedexpansion
   - enableextensions
   - errorlevel
+  - esbuild
   - healthindicator
   - Metaspace
   - popd

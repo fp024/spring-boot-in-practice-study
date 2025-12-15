@@ -1,0 +1,14 @@
+node_modules
+build
+package-lock.json
+pnpm-lock.yaml
+package.json
+tsconfig.json
+cspell.json
+cspell.yaml
+
+.git
+
+.vscode
+.idea
+

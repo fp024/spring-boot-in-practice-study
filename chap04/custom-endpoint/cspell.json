@@ -13,9 +13,7 @@
     "/docs/database.md",
     "pnpm-lock.yaml"
   ],
-  "words": [
-
-  ],
+  "words": [],
   "ignoreWords": [
     "springboot",
     "codegen",
