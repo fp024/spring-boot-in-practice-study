@@ -11,7 +11,7 @@ if not exist "project-folder-list.txt" (
 )
 
 REM 복사할 파일들 존재 확인
-if not exist "%ROOT_DIR%package.json" (
+if not exist "%ROOT_DIR%package-for-sub-projects.json" (
   echo 오류: package.json 파일을 찾을 수 없습니다.
   pause
   exit /b 1
@@ -34,7 +34,7 @@ for /F "delims=" %%D in (project-folder-list.txt) do (
   
   REM 대상 디렉터리 존재 확인
   if exist "%ROOT_DIR%\%%D" (
-    copy "%ROOT_DIR%package.json" "%ROOT_DIR%\%%D\" >nul
+    copy "%ROOT_DIR%package-for-sub-projects.json" "%ROOT_DIR%\%%D\package.json" >nul
     if errorlevel 1 (
       echo   오류: %%D에 package.json 복사 실패
     ) else (

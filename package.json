@@ -1,5 +1,5 @@
 {
-  "name": "init-project-for-vscode-java-environment",
+  "name": "root--init-project-for-vscode-java-environment",
   "version": "1.0.0",
   "type": "module",
   "private": "true",
@@ -10,11 +10,7 @@
     "update-all": "pnpm up -r",
     "update-latest": "pnpm up -r --latest",
     "sync-pm": "node scripts/sync-package-manager.js",
-    "add-javac-parameters-option": "add-javac-parameters-option",
-    "copy-mockito-agent-gradle": "copy-mockito-agent-gradle",
-    "copy-mockito-jar": "run-gradle-wrapper copyMockitoJar",
-    "init-test-jvm-options": "init-test-jvm-options",
-    "init-project": "pnpm run add-javac-parameters-option && pnpm run copy-mockito-jar && pnpm run init-test-jvm-options"
+    "init-all-projects": "node scripts/init-all-projects.js"
   },
   "devDependencies": {
     "glob": "^13.0.0",

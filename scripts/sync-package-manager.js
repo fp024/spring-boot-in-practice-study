@@ -9,7 +9,7 @@ console.log(`Syncing packageManager: ${packageManager}\n`);
 
 // 모든 하위 프로젝트의 package.json 찾기
 const packageFiles = glob.sync("chap*/**/package.json", {
-  ignore: ["**/node_modules/**", "**/dist/**", "**/build/**"],
+  ignore: ["**/node_modules/**", "**/dist/**", "**/build/**", "**/bin/**"],
 });
 
 packageFiles.forEach((file) => {

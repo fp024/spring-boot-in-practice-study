@@ -86,6 +86,7 @@
 | `pnpm update-all` | 모든 하위 프로젝트의 의존성을 `package.json`에 명시된 버전 범위 내에서 업데이트합니다. |
 | `pnpm update-latest` | 모든 하위 프로젝트의 의존성을 최신 버전으로 업데이트합니다. (메이저 버전 포함) |
 | `pnpm sync-pm` | 루트 `package.json`의 `packageManager` 버전을 모든 하위 프로젝트에 동기화합니다. |
+| `pnpm init-all-projects` | 모든 하위 프로젝트의 VSCode 실행환경의 Java / 테스트 설정<br /> (`-parameters` VM옵션 설정, mockito 버전 동기화) |
 
 
 

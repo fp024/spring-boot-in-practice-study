@@ -1,5 +1,5 @@
 {
-  "name": "init-project-for-vscode-java-environment",
+  "name": "sub-project--init-project-for-vscode-java-environment",
   "version": "1.0.0",
   "type": "module",
   "private": "true",
@@ -7,9 +7,6 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "format": "prettier --write \"./**/*.{html,css,js,json}\"",
-    "update-all": "pnpm up -r",
-    "update-latest": "pnpm up -r --latest",
-    "sync-pm": "node scripts/sync-package-manager.js",
     "add-javac-parameters-option": "add-javac-parameters-option",
     "copy-mockito-agent-gradle": "copy-mockito-agent-gradle",
     "copy-mockito-jar": "run-gradle-wrapper copyMockitoJar",
@@ -17,7 +14,6 @@
     "init-project": "pnpm run add-javac-parameters-option && pnpm run copy-mockito-jar && pnpm run init-test-jvm-options"
   },
   "devDependencies": {
-    "glob": "^13.0.0",
     "prettier": "^3.7.4",
     "vscode-java-setup-scripts": "github:fp024/vscode-java-setup-scripts#v0.1.0"
   }
