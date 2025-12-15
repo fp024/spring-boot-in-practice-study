@@ -3,12 +3,15 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - bootstarp
   - enabledelayedexpansion
   - enableextensions
   - errorlevel
   - esbuild
+  - gradlew
   - healthindicator
   - Metaspace
+  - passay
   - popd
   - pushd
   - setlocal

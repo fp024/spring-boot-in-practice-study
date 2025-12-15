@@ -89,9 +89,38 @@
 
 
 
-## 프로젝트 테스트
+## 프로젝트 실행 / 테스트
+> ✨ Gradle 멀티 프로젝트로 구성했는데 개별 실행 방법 정리 했다. 
 
-* ...
+### 특정 예제 실행 (Spring Boot 앱)
+
+```bash
+# 패턴: ./gradlew :경로:태스크
+./gradlew :chap01:chap01-boot3:bootRun
+./gradlew :chap02:boot3:bean-validation:bootRun
+./gradlew :chap04:spring-boot-actuator:bootRun
+```
+
+### 특정 예제 빌드
+
+```bash
+./gradlew :chap02:boot3:bean-validation:build
+```
+
+### 특정 예제 테스트
+
+```bash
+./gradlew :chap03:boot3:configuring-mongodb-database:test
+```
+
+### 해당 디렉토리에서 실행
+
+```bash
+cd chap02/boot3/bean-validation
+./gradlew bootRun
+```
+
+> **참고**: 경로 구분은 `:` 사용 (settings.gradle의 include 경로와 동일)
 
 
 
