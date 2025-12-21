@@ -7,9 +7,9 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "format": "prettier --write \"./**/*.{html,css,js,json}\"",
+    "install-all": "pnpm install -r",
     "update-all": "pnpm up -r",
     "update-latest": "pnpm up -r --latest",
-    "sync-pm": "node scripts/sync-package-manager.js",
     "init-all-projects": "node scripts/init-all-projects.js"
   },
   "devDependencies": {

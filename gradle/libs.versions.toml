@@ -4,7 +4,7 @@
 ##### plugins versions #####
 
 # Spring Boot 3.x의 최신 버전 #
-spring-boot-v3-latest-plugin = "3.5.8"
+spring-boot-v3-latest-plugin = "3.5.9"
 
 # https://github.com/spring-gradle-plugins/dependency-management-plugin
 spring-dependency-management-plugin = "1.1.7"
@@ -14,7 +14,7 @@ spring-dependency-management-plugin = "1.1.7"
 # https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies
 # https://spring.io/projects/spring-cloud 에서 호환성 메트릭스를 참고
 # 2025.1.0 버전부터 Spring Boot 4.0.x 지원
-spring-cloud-dependencies = "2025.0.0"
+spring-cloud-dependencies = "2025.0.1"
 
 # https://mvnrepository.com/artifact/org.passay/passay
 passay = "1.6.6"
