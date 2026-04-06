@@ -48,6 +48,12 @@ projectDirs.forEach((dir) => {
   console.log("==========================================");
 
   try {
+    execSync("corepack use pnpm@latest", {
+      cwd: projectPath,
+      stdio: "inherit",
+      shell: true,
+    });
+
     execSync("pnpm init-project", {
       cwd: projectPath,
       stdio: "inherit",

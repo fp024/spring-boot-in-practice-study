@@ -9,400 +9,394 @@ importers:
   .:
     devDependencies:
       glob:
-        specifier: ^13.0.0
-        version: 13.0.0
+        specifier: ^13.0.6
+        version: 13.0.6
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap01/chap01-boot3:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/bean-validation:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/bean-validation-custom-annotation:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/command-line-runner/spring-boot-app-final:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/config-data-file:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/configuration-properties:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/os-env-variables:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/property-sources:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/spring-application:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/spring-boot-default-logging/spring-boot-app-final:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap02/boot3/spring-boot-logging-with-log4j2/spring-boot-app-final:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/configuring-mongodb-database:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/configuring-relational-database:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/creating-custom-spring-data-repository:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/custom-query-methods:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/initialize-relational-database-with-schema:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/manage-domain-objects-with-jpa:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/managing-many-to-many-relationship:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/named-query-method:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/using-criteria-api:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/using-paging-and-sorting-repository:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/using-query-annotation:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap03/boot3/using-query-dsl:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap04/custom-endpoint:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap04/custom-failure-analyzer:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap04/custom-healthindicator:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap04/spring-boot-actuator:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap04/spring-boot-actuator-custom-metrics:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap04/spring-boot-actuator-custom-status-mapper:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap04/spring-boot-actuator-info-endpoint:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap04/spring-boot-actuator-metrics:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
   chap05/introducing-spring-security:
     devDependencies:
       prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3
 
 packages:
-
-  '@isaacs/balanced-match@4.0.1':
-    resolution: {integrity: sha512-yzMTt9lEb8Gv7zRioUilSglI0c0smZ9k5D65677DLWLtWJaXIS3CqcGyUFByYKlnUj6TkjLVs54fBl6+TiGQDQ==}
-    engines: {node: 20 || >=22}
-
-  '@isaacs/brace-expansion@5.0.0':
-    resolution: {integrity: sha512-ZT55BDLV0yv0RBm2czMiZ+SqCGO7AvmOM3G/w2xhVPH+te0aKgFjmBvGlL1dH+ql2tgGO3MVrbb3jCKyvpgnxA==}
-    engines: {node: 20 || >=22}
 
   array-timsort@1.0.3:
     resolution: {integrity: sha512-/+3GRL7dDAGEfM6TseQk/U+mi18TU2Ms9I3UlLdUMhz2hbvGNTKdj9xniwXfUqgYhHxRx0+8UnKkvlNwVU+cWQ==}
 
-  comment-json@4.5.1:
-    resolution: {integrity: sha512-taEtr3ozUmOB7it68Jll7s0Pwm+aoiHyXKrEC8SEodL4rNpdfDLqa7PfBlrgFoCNNdR8ImL+muti5IGvktJAAg==}
-    engines: {node: '>= 6'}
+  balanced-match@4.0.4:
+    resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
+    engines: {node: 18 || 20 || >=22}
 
-  core-util-is@1.0.3:
-    resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
+  brace-expansion@5.0.5:
+    resolution: {integrity: sha512-VZznLgtwhn+Mact9tfiwx64fA9erHH/MCXEUfB/0bX/6Fz6ny5EGTXYltMocqg4xFAQZtnO3DHWWXi8RiuN7cQ==}
+    engines: {node: 18 || 20 || >=22}
+
+  comment-json@4.6.2:
+    resolution: {integrity: sha512-R2rze/hDX30uul4NZoIZ76ImSJLFxn/1/ZxtKC1L77y2X1k+yYu1joKbAtMA2Fg3hZrTOiw0I5mwVMo0cf250w==}
+    engines: {node: '>= 6'}
 
   esprima@4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
     engines: {node: '>=4'}
     hasBin: true
 
-  glob@13.0.0:
-    resolution: {integrity: sha512-tvZgpqk6fz4BaNZ66ZsRaZnbHvP/jG3uKJvAZOwEVUL4RTA5nJeeLYfyN9/VA8NX/V3IBG+hkeuGpKjvELkVhA==}
+  glob@13.0.6:
+    resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
+    engines: {node: 18 || 20 || >=22}
+
+  lru-cache@11.3.0:
+    resolution: {integrity: sha512-sr8xPKE25m6vJVcrdn6NxtC0fVfuPowbscLypegRgOm0yXSqr5JNHCAY3hnusdJ7HRBW04j6Ip4khvHU778DuQ==}
     engines: {node: 20 || >=22}
 
-  lru-cache@11.2.4:
-    resolution: {integrity: sha512-B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==}
-    engines: {node: 20 || >=22}
+  minimatch@10.2.5:
+    resolution: {integrity: sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==}
+    engines: {node: 18 || 20 || >=22}
 
-  minimatch@10.1.1:
-    resolution: {integrity: sha512-enIvLvRAFZYXJzkCYG5RKmPfrFArdLv+R+lbQ53BmIMLIry74bjKzX6iHAm8WYamJkhSSEabrWN5D97XnKObjQ==}
-    engines: {node: 20 || >=22}
-
-  minipass@7.1.2:
-    resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
+  minipass@7.1.3:
+    resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  path-scurry@2.0.1:
-    resolution: {integrity: sha512-oWyT4gICAu+kaA7QWk/jvCHWarMKNs6pXOGWKDTr7cw4IGcUbW+PeTfbaQiLGheFRpjo6O9J0PmyMfQPjH71oA==}
-    engines: {node: 20 || >=22}
+  path-scurry@2.0.2:
+    resolution: {integrity: sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg==}
+    engines: {node: 18 || 20 || >=22}
 
-  prettier@3.7.4:
-    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
+  prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
     engines: {node: '>=14'}
     hasBin: true
 
-  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a:
-    resolution: {tarball: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a}
+  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3:
+    resolution: {tarball: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3}
     version: 0.1.0
     engines: {node: '>=22.17.0'}
     hasBin: true
 
 snapshots:
 
-  '@isaacs/balanced-match@4.0.1': {}
-
-  '@isaacs/brace-expansion@5.0.0':
-    dependencies:
-      '@isaacs/balanced-match': 4.0.1
-
   array-timsort@1.0.3: {}
 
-  comment-json@4.5.1:
+  balanced-match@4.0.4: {}
+
+  brace-expansion@5.0.5:
+    dependencies:
+      balanced-match: 4.0.4
+
+  comment-json@4.6.2:
     dependencies:
       array-timsort: 1.0.3
-      core-util-is: 1.0.3
       esprima: 4.0.1
-
-  core-util-is@1.0.3: {}
 
   esprima@4.0.1: {}
 
-  glob@13.0.0:
+  glob@13.0.6:
     dependencies:
-      minimatch: 10.1.1
-      minipass: 7.1.2
-      path-scurry: 2.0.1
+      minimatch: 10.2.5
+      minipass: 7.1.3
+      path-scurry: 2.0.2
 
-  lru-cache@11.2.4: {}
+  lru-cache@11.3.0: {}
 
-  minimatch@10.1.1:
+  minimatch@10.2.5:
     dependencies:
-      '@isaacs/brace-expansion': 5.0.0
+      brace-expansion: 5.0.5
 
-  minipass@7.1.2: {}
+  minipass@7.1.3: {}
 
-  path-scurry@2.0.1:
+  path-scurry@2.0.2:
     dependencies:
-      lru-cache: 11.2.4
-      minipass: 7.1.2
+      lru-cache: 11.3.0
+      minipass: 7.1.3
 
-  prettier@3.7.4: {}
+  prettier@3.8.1: {}
 
-  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/e4ef9235e850d3c46fa14414582ff38d2410654a:
+  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/43187373a41449782bac6681014b396cc08fbff3:
     dependencies:
-      comment-json: 4.5.1
+      comment-json: 4.6.2

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "private": "true",
-  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "format": "prettier --write \"./**/*.{html,css,js,json}\"",
@@ -14,7 +14,7 @@
     "init-project": "pnpm run add-javac-parameters-option && pnpm run copy-mockito-jar && pnpm run init-test-jvm-options"
   },
   "devDependencies": {
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.1",
     "vscode-java-setup-scripts": "github:fp024/vscode-java-setup-scripts#v0.1.0"
   }
 }
