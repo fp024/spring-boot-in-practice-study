@@ -19,6 +19,9 @@
   * https://www.yes24.com/Product/Goods/122002340
 * 교보문고
   * https://product.kyobobook.co.kr/detail/S000208713876
+* 알라딘
+  * https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=323427516
+
 
 
 
