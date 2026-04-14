@@ -49,7 +49,8 @@ class CourseTrackerSpringBootApplicationTests {
     assertThat(query2.fetch()).hasSize(2);
 
     OrderSpecifier<Integer> descOrderSpecifier = course.rating.desc();
-    assertThat(Lists.newArrayList(courseRepository.findAll(descOrderSpecifier)).get(0).getName())
+    assertThat(
+            Lists.newArrayList(courseRepository.findAll(descOrderSpecifier)).getFirst().getName())
         .isEqualTo("Getting Started with Spring Security DSL");
   }
 
