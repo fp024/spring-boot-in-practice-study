@@ -34,18 +34,19 @@ dependencies {
 
   runtimeOnly 'com.h2database:h2'
 
-  implementation ("com.querydsl:querydsl-jpa") {
-    artifact {
-      classifier = 'jakarta'
-    }
-  }
+  implementation (libs.querydsl.jpa)
+
   annotationProcessor (
-    'jakarta.persistence:jakarta.persistence-api', 
+    'jakarta.persistence:jakarta.persistence-api',
     'jakarta.annotation:jakarta.annotation-api'
   )
-  annotationProcessor ("com.querydsl:querydsl-apt") {
+
+  // https://openfeign.github.io/querydsl/migration/
+  // Fork 개발을 하시면서, querydsl-apt에서는 jpa, jakarta를 동일하게 설정하신 것 같다.
+  // 가이드 대로 jpa로 해두자!
+  annotationProcessor (libs.querydsl.apt) {
     artifact {
-      classifier = 'jakarta'
+      classifier = 'jpa'
     }
   }
 

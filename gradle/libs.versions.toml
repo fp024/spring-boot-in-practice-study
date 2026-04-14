@@ -22,6 +22,12 @@ passay = "1.6.6"
 # https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo.spring
 embedded-mongo-spring3x = "4.24.0"
 
+# QueryDSL Fork 프로젝트
+# https://github.com/OpenFeign/querydsl
+# https://openfeign.github.io/querydsl/migration/
+querydsl = "7.1"
+
+
 ### WebJars ###
 # https://mvnrepository.com/artifact/org.webjars/webjars-locator
 # webjars-locator는 Boot Dependencies에 있는 webjars-locator-core를 그대로 쓰면 된다.
@@ -40,6 +46,8 @@ webjars-font-awesome = "7.2.0"
 spring-cloud-dependencies = { module = "org.springframework.cloud:spring-cloud-dependencies", version.ref = "spring-cloud-dependencies" }
 passay = { module = "org.passay:passay", version.ref = "passay" }
 embedded-mongo-spring3x = { module = "de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring3x", version.ref = "embedded-mongo-spring3x" }
+querydsl-jpa = { module = "io.github.openfeign.querydsl:querydsl-jpa", version.ref = "querydsl" }
+querydsl-apt = { module = "io.github.openfeign.querydsl:querydsl-apt", version.ref = "querydsl" }
 
 webjars-jquery = { module = "org.webjars:jquery", version.ref = "webjars-jquery" }
 webjars-bootstrap = { module = "org.webjars:bootstrap", version.ref = "webjars-bootstrap" }
