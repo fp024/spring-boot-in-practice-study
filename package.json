@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "glob": "^13.0.6",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.3",
     "vscode-java-setup-scripts": "github:fp024/vscode-java-setup-scripts#v0.1.0"
   }
 }
