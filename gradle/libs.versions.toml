@@ -27,7 +27,9 @@ embedded-mongo-spring3x = "4.24.0"
 #   https://github.com/OpenFeign/querydsl
 # 마이그레이션 가이드
 #   https://openfeign.github.io/querydsl/migration/
-querydsl = "7.1"
+# 6.x: Hibernate 6 호환
+# 7.x: Hibernate 7 호환
+querydsl = "6.12"
 
 
 ### WebJars ###
