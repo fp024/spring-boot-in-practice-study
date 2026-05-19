@@ -16,7 +16,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap01/chap01-boot3:
     devDependencies:
@@ -25,7 +25,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/bean-validation:
     devDependencies:
@@ -34,7 +34,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/bean-validation-custom-annotation:
     devDependencies:
@@ -43,7 +43,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/command-line-runner/spring-boot-app-final:
     devDependencies:
@@ -52,7 +52,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/config-data-file:
     devDependencies:
@@ -61,7 +61,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/configuration-properties:
     devDependencies:
@@ -70,7 +70,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/os-env-variables:
     devDependencies:
@@ -79,7 +79,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/property-sources:
     devDependencies:
@@ -88,7 +88,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/spring-application:
     devDependencies:
@@ -97,7 +97,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/spring-boot-default-logging/spring-boot-app-final:
     devDependencies:
@@ -106,7 +106,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap02/boot3/spring-boot-logging-with-log4j2/spring-boot-app-final:
     devDependencies:
@@ -115,7 +115,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/configuring-mongodb-database:
     devDependencies:
@@ -124,7 +124,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/configuring-relational-database:
     devDependencies:
@@ -133,7 +133,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/creating-custom-spring-data-repository:
     devDependencies:
@@ -142,7 +142,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/custom-query-methods:
     devDependencies:
@@ -151,7 +151,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/initialize-relational-database-with-schema:
     devDependencies:
@@ -160,7 +160,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/manage-domain-objects-with-jpa:
     devDependencies:
@@ -169,7 +169,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/managing-many-to-many-relationship:
     devDependencies:
@@ -178,7 +178,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/named-query-method:
     devDependencies:
@@ -187,7 +187,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/using-criteria-api:
     devDependencies:
@@ -196,7 +196,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/using-paging-and-sorting-repository:
     devDependencies:
@@ -205,7 +205,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/using-query-annotation:
     devDependencies:
@@ -214,7 +214,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap03/boot3/using-query-dsl:
     devDependencies:
@@ -223,7 +223,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap04/custom-endpoint:
     devDependencies:
@@ -232,7 +232,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap04/custom-failure-analyzer:
     devDependencies:
@@ -241,7 +241,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap04/custom-healthindicator:
     devDependencies:
@@ -250,7 +250,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap04/spring-boot-actuator:
     devDependencies:
@@ -259,7 +259,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap04/spring-boot-actuator-custom-metrics:
     devDependencies:
@@ -268,7 +268,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap04/spring-boot-actuator-custom-status-mapper:
     devDependencies:
@@ -277,7 +277,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap04/spring-boot-actuator-info-endpoint:
     devDependencies:
@@ -286,7 +286,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap04/spring-boot-actuator-metrics:
     devDependencies:
@@ -295,7 +295,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
   chap05/introducing-spring-security:
     devDependencies:
@@ -304,7 +304,7 @@ importers:
         version: 3.8.3
       vscode-java-setup-scripts:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
-        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
 packages:
 
@@ -315,8 +315,8 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  brace-expansion@5.0.5:
-    resolution: {integrity: sha512-VZznLgtwhn+Mact9tfiwx64fA9erHH/MCXEUfB/0bX/6Fz6ny5EGTXYltMocqg4xFAQZtnO3DHWWXi8RiuN7cQ==}
+  brace-expansion@5.0.6:
+    resolution: {integrity: sha512-kLpxurY4Z4r9sgMsyG0Z9uzsBlgiU/EFKhj/h91/8yHu0edo7XuixOIH3VcJ8kkxs6/jPzoI6U9Vj3WqbMQ94g==}
     engines: {node: 18 || 20 || >=22}
 
   comment-json@4.6.2:
@@ -332,8 +332,8 @@ packages:
     resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
     engines: {node: 18 || 20 || >=22}
 
-  lru-cache@11.3.5:
-    resolution: {integrity: sha512-NxVFwLAnrd9i7KUBxC4DrUhmgjzOs+1Qm50D3oF1/oL+r1NpZ4gA7xvG0/zJ8evR7zIKn4vLf7qTNduWFtCrRw==}
+  lru-cache@11.3.6:
+    resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
     engines: {node: 20 || >=22}
 
   minimatch@10.2.5:
@@ -353,8 +353,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0:
-    resolution: {tarball: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0}
+  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a}
     version: 0.1.0
     engines: {node: '>=22.17.0'}
     hasBin: true
@@ -365,7 +365,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  brace-expansion@5.0.5:
+  brace-expansion@5.0.6:
     dependencies:
       balanced-match: 4.0.4
 
@@ -382,21 +382,21 @@ snapshots:
       minipass: 7.1.3
       path-scurry: 2.0.2
 
-  lru-cache@11.3.5: {}
+  lru-cache@11.3.6: {}
 
   minimatch@10.2.5:
     dependencies:
-      brace-expansion: 5.0.5
+      brace-expansion: 5.0.6
 
   minipass@7.1.3: {}
 
   path-scurry@2.0.2:
     dependencies:
-      lru-cache: 11.3.5
+      lru-cache: 11.3.6
       minipass: 7.1.3
 
   prettier@3.8.3: {}
 
-  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/8efd59b1eb5e8890d1b716b3269f625f51a109d0:
+  vscode-java-setup-scripts@https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a:
     dependencies:
       comment-json: 4.6.2

@@ -36,14 +36,16 @@ public class CourseTrackerSpringBootApplication implements CommandLineRunner {
       log.info("Password for user2 adhere to the password policy");
     }
 
-    User user3 = new User("sbip03", "Sbip01$4UDfgggg");
+    User user3 = new User("sbip03", "Sbip01$4UDfggg");
     violations = validator.validate(user3);
     log.error("Password for user3 violates maximum repetitive rule");
     violations.forEach(
         constraintViolation ->
             log.error("Violation details: [{}].", constraintViolation.getMessage()));
 
-    User user4 = new User("sbip04", "Sbip014UDfgggg");
+    User user4 = new User("sbip04", "Sbip014UDfgg");
+    // 이부분은 동일 문자 반복에 대한 위반보단,
+    // 특수문자가 한 글자 이상 포함되었는지에 대한 오류 확인이므로, g 4회반복을 2회반복으로 해야겠다.
     violations = validator.validate(user4);
     log.error("Password for user4 violates special character rule");
     violations.forEach(
