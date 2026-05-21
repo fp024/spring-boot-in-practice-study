@@ -1,0 +1,28 @@
+{
+  "java.autobuild.enabled": true,
+  "[java]": {
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[spring-boot-properties-yaml]": {
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true
+  },
+  "spring-boot.ls.problem.version-validation.UPDATE_LATEST_MINOR_VERSION": "IGNORE",
+  "java.test.config": {
+    "vmArgs": [
+      "-javaagent:${workspaceFolder}/javaagent-libs/mockito-core-5.17.0.jar",
+      "-Xshare:off"
+    ]
+  }
+}
