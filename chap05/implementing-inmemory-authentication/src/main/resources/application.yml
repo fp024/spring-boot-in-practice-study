@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: implementing-custom-loginpage
+    name: implementing-inmemory-authentication
   mvc:
     hiddenmethod:
       filter:

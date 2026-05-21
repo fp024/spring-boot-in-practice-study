@@ -31,3 +31,4 @@ chap04\spring-boot-actuator-info-endpoint
 chap04\spring-boot-actuator-metrics
 chap05\introducing-spring-security
 chap05\implementing-custom-loginpage
+chap05\implementing-inmemory-authentication

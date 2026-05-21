@@ -30,6 +30,40 @@
 
 
 
+### 5.3.1 기법: 스프링 부트 애플리케이션에서 스프링 시큐리티 로그인 페이지 커스터마이징
+
+> 예제: [implementing-custom-loginpage](implementing-custom-loginpage)
+
+일단 커스터마이징 로그인 페이지를 추가해보는 내용이다. 또 오랜만에 하니까 머리가 아프긴하네..😅
+
+WebSecurity 설정으로 css나 이미지 리소스 경로 ignore 하는 부분은... Boot 시작시 경고가 노출되어서...
+
+```java
+    http.authorizeHttpRequests(
+            auth ->
+                auth.requestMatchers(
+                        "/webjars/**", //
+                        "/images/**",
+                        "/css/**",
+                        "/h2-console/**")
+                    .permitAll()
+                    ...
+```
+
+명시적으로 requestMatchers 설정에 추가했다. 
+
+
+
+### 5.3.2 기법: 인메모리 인증 적용
+
+> 예제: [implementing-inmemory-authentication](implementing-inmemory-authentication)
+
+
+
+
+
+
+
 
 
 ## 의견
