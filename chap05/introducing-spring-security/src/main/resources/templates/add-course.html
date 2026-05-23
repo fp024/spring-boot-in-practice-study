@@ -24,9 +24,9 @@
       <button
         class="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbar-list"
-        aria-controls="navbarNav"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar-list"
+        aria-controls="navbar-list"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
@@ -42,7 +42,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#" th:href="@{/addcourse}"
-              >Add Course <span class="sr-only">(current)</span></a
+              >Add Course <span class="visually-hidden">(current)</span></a
             >
           </li>
         </ul>
@@ -72,9 +72,9 @@
             th:object="${course}"
             method="post"
           >
-            <div class="row">
+            <div class="row g-3">
               <div class="mb-2 col-md-9">
-                <label for="name" class="col-form-label">Name</label>
+                <label for="name" class="form-label">Name</label>
                 <input
                   type="text"
                   th:field="*{name}"
@@ -89,7 +89,7 @@
                 ></span>
               </div>
               <div class="mb-2 col-md-9">
-                <label for="category" class="col-form-label">Category</label>
+                <label for="category" class="form-label">Category</label>
                 <input
                   th:field="*{category}"
                   class="form-control"
@@ -103,7 +103,7 @@
                 ></span>
               </div>
               <div class="mb-2 col-md-9">
-                <label for="rating" class="col-form-label">Course Rating</label>
+                <label for="rating" class="form-label">Course Rating</label>
                 <select th:field="*{rating}" class="form-select" id="rating">
                   <option th:value="1">1 (Lowest)</option>
                   <option th:value="2">2</option>
@@ -112,10 +112,8 @@
                   <option th:value="5">5 (Highest)</option>
                 </select>
               </div>
-              <div class="mb-2 col-md-9">
-                <label for="description" class="col-form-label"
-                  >Description</label
-                >
+              <div class="mb-3 col-md-9">
+                <label for="description" class="form-label">Description</label>
                 <textarea
                   th:field="*{description}"
                   class="form-control"
