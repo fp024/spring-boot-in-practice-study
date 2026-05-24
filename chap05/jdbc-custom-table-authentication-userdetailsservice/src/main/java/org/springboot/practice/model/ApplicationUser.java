@@ -1,6 +1,7 @@
 package org.springboot.practice.model;
 
 import jakarta.persistence.*;
+import java.util.Set;
 import lombok.Data;
 
 @Entity
@@ -14,7 +15,10 @@ public class ApplicationUser {
 
   private String firstName;
   private String lastName;
+
+  @Column(name = "USERNAME", nullable = false, unique = true)
   private String username;
+
   private String email;
   private String password;
   private boolean verified;
@@ -22,4 +26,7 @@ public class ApplicationUser {
 
   @Column(name = "ACC_CRED_EXPIRED")
   private boolean accountCredentialsExpired;
+
+  @OneToMany(mappedBy = "user")
+  private Set<Authority> authorities;
 }

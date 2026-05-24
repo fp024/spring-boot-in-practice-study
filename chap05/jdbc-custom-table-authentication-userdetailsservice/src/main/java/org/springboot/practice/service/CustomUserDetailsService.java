@@ -15,7 +15,8 @@ public class CustomUserDetailsService implements UserDetailsService {
 
   @Override
   public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-    ApplicationUser applicationUser = applicationUserRepository.findByUsername(username);
+    ApplicationUser applicationUser =
+        applicationUserRepository.findByUsernameWithAuthorities(username);
     if (applicationUser == null) {
       throw new UsernameNotFoundException("No user with " + username + " exists in the system");
     }
@@ -25,8 +26,10 @@ public class CustomUserDetailsService implements UserDetailsService {
         .disabled(!applicationUser.isVerified())
         .accountExpired(applicationUser.isAccountCredentialsExpired())
         .accountLocked(applicationUser.isLocked())
-        // .roles("USER")
-        .authorities("ROLE_USER")
+        .authorities(
+            applicationUser.getAuthorities().stream()
+                .map(a -> a.getId().getAuthority()) // 예: "ROLE_ADMIN"
+                .toArray(String[]::new))
         .build();
   }
 }
