@@ -16,7 +16,7 @@
     <script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm ps-2 pe-2">
       <a class="navbar-brand brand-text" href="#">
         <img src="/images/logo.png" width="30" height="30" alt="logo" />
         Course Tracker
@@ -111,9 +111,7 @@
                 ></span>
               </div>
               <div class="mb-2 col-md-9">
-                <label for="description" class="form-label"
-                  >Description</label
-                >
+                <label for="description" class="form-label">Description</label>
                 <textarea
                   th:field="*{description}"
                   class="form-control"

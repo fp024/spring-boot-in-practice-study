@@ -1,4 +1,4 @@
-rootProject.name = 'jdbc-custom-table-authentication-userdetailsservice'
+rootProject.name = 'jdbc-custom-table-authentication'
 
 dependencyResolutionManagement {
   versionCatalogs {
