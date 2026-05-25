@@ -351,6 +351,15 @@ importers:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
         version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
+  chap05/ldap-authentication:
+    devDependencies:
+      prettier:
+        specifier: ^3.8.3
+        version: 3.8.3
+      vscode-java-setup-scripts:
+        specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
+
 packages:
 
   array-timsort@1.0.3:
@@ -377,8 +386,8 @@ packages:
     resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
     engines: {node: 18 || 20 || >=22}
 
-  lru-cache@11.3.6:
-    resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
+  lru-cache@11.5.0:
+    resolution: {integrity: sha512-5YgH9UJd7wVb9hIouI2adWpgqrrICkt070Dnj8EUY1+B4B2P9eRLPAkAAo6NICA7CEhOIeBHl46u9zSNpNu7zA==}
     engines: {node: 20 || >=22}
 
   minimatch@10.2.5:
@@ -427,7 +436,7 @@ snapshots:
       minipass: 7.1.3
       path-scurry: 2.0.2
 
-  lru-cache@11.3.6: {}
+  lru-cache@11.5.0: {}
 
   minimatch@10.2.5:
     dependencies:
@@ -437,7 +446,7 @@ snapshots:
 
   path-scurry@2.0.2:
     dependencies:
-      lru-cache: 11.3.6
+      lru-cache: 11.5.0
       minipass: 7.1.3
 
   prettier@3.8.3: {}

@@ -45,4 +45,5 @@ include 'chap05:implementing-custom-loginpage'
 include 'chap05:implementing-inmemory-authentication'
 include 'chap05:jdbc-default-authentication'
 include 'chap05:jdbc-custom-table-authentication-userdetailsservice'
+include 'chap05:ldap-authentication'
 
