@@ -1,15 +1,14 @@
 package org.springboot.practice.security;
 
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.ldap.core.support.LdapContextSource;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.ldap.LdapPasswordComparisonAuthenticationManagerFactory;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.ldap.DefaultSpringSecurityContextSource;
 import org.springframework.security.ldap.userdetails.DefaultLdapAuthoritiesPopulator;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.AccessDeniedHandler;
@@ -54,16 +53,9 @@ public class SecurityConfiguration {
   }
 
   @Bean
-  DefaultSpringSecurityContextSource contextSource() {
-    return new DefaultSpringSecurityContextSource(
-        List.of("ldap://localhost:8389/"), //
-        "dc=manning,dc=com" //
-        );
-  }
-
-  @Bean
   AuthenticationManager authenticationManager(
-      DefaultSpringSecurityContextSource contextSource, PasswordEncoder passwordEncoder) {
+      LdapContextSource contextSource, // LDAP 클라이언트 쪽 인스턴스
+      PasswordEncoder passwordEncoder) {
     // 기존 passwordCompare() 설정과 동일한 방식
     var factory =
         new LdapPasswordComparisonAuthenticationManagerFactory(contextSource, passwordEncoder);

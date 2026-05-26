@@ -41,10 +41,16 @@ spring:
       chain:
         cache: false
   ldap:
+    # LDAP 클라이언트 설정
+    base: dc=manning,dc=com
+    urls:
+      - ldap://localhost:8389
+    # LDAP 임베디드 서버 설정
     embedded:
       port: 8389
       ldif: classpath:users.ldif
       base-dn: dc=manning,dc=com
+
 
 logging:
   pattern:
