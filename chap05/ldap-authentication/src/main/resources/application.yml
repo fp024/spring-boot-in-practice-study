@@ -40,6 +40,11 @@ spring:
         period: 0
       chain:
         cache: false
+  ldap:
+    embedded:
+      port: 8389
+      ldif: classpath:users.ldif
+      base-dn: dc=manning,dc=com
 
 logging:
   pattern:

@@ -35,7 +35,11 @@ dependencies {
   implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
   implementation 'org.springframework.boot:spring-boot-starter-security'
 
-  developmentOnly 'org.springframework.boot:spring-boot-devtools'  
+  developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+  implementation 'org.springframework.ldap:spring-ldap-core'
+  implementation 'org.springframework.security:spring-security-ldap'
+  implementation 'com.unboundid:unboundid-ldapsdk'
 
   runtimeOnly 'com.h2database:h2'
 
