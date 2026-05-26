@@ -47,4 +47,5 @@ include 'chap05:jdbc-default-authentication'
 include 'chap05:jdbc-custom-table-authentication-userdetailsservice'
 include 'chap05:ldap-authentication'
 include 'chap05:http-basic-authentication'
+include 'chap05:understanding-roles'
 

@@ -1,0 +1,9 @@
+rootProject.name = 'understanding-roles'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../gradle/libs.versions.toml"))
+    }
+  }
+}
