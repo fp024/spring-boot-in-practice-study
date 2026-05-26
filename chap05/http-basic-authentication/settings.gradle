@@ -1,0 +1,9 @@
+rootProject.name = 'http-basic-authentication'
+
+dependencyResolutionManagement {
+  versionCatalogs {
+    libs {
+      from(files("../../gradle/libs.versions.toml"))
+    }
+  }
+}

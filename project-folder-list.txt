@@ -36,4 +36,5 @@ chap05\jdbc-default-authentication
 chap05\jdbc-custom-table-authentication
 chap05\jdbc-custom-table-authentication-userdetailsservice
 chap05\ldap-authentication
+chap05\http-basic-authentication
 

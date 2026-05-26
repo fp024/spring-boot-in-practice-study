@@ -297,6 +297,15 @@ importers:
         specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
         version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
 
+  chap05/http-basic-authentication:
+    devDependencies:
+      prettier:
+        specifier: ^3.8.3
+        version: 3.8.3
+      vscode-java-setup-scripts:
+        specifier: github:fp024/vscode-java-setup-scripts#v0.1.0
+        version: https://codeload.github.com/fp024/vscode-java-setup-scripts/tar.gz/7131a797aa6ad7af2a0c8d7f4665728ad091527a
+
   chap05/implementing-custom-loginpage:
     devDependencies:
       prettier:

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Add Course</title>
+    <title>Update Course</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}" />
     <link rel="stylesheet" type="text/css" th:href="@{/css/custom.css}" />
@@ -41,16 +41,7 @@
             <a class="nav-link" href="#" th:href="@{/index}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#" th:href="@{/addcourse}"
-              >Add Course <span class="visually-hidden">(current)</span></a
-            >
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <form th:action="@{/doLogout}" method="post">
-              <button class="btn btn-danger" type="submit">logout</button>
-            </form>
+            <a class="nav-link" href="#" th:href="@{/addcourse}">Add Course</a>
           </li>
         </ul>
       </div>
@@ -59,18 +50,20 @@
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-          <h2 class="text-center mb-2">Add a Course</h2>
+          <h2 class="text-center mb-2">Update Course</h2>
         </div>
         <div class="col-md-3"></div>
       </div>
+      <h2 class="mb-5"></h2>
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-9">
           <form
             action="#"
-            th:action="@{/addcourse}"
+            th:action="@{/update/{id}(id=${course.id})}"
             th:object="${course}"
             method="post"
+            th:method="put"
           >
             <div class="row g-3">
               <div class="mb-2 col-md-9">
@@ -111,8 +104,13 @@
                   <option th:value="4">4</option>
                   <option th:value="5">5 (Highest)</option>
                 </select>
+                <span
+                  th:if="${#fields.hasErrors('category')}"
+                  th:errors="*{rating}"
+                  class="text-danger"
+                ></span>
               </div>
-              <div class="mb-3 col-md-9">
+              <div class="mb-2 col-md-9">
                 <label for="description" class="form-label">Description</label>
                 <textarea
                   th:field="*{description}"
@@ -129,7 +127,11 @@
             </div>
             <div class="row">
               <div class="col-md-6 mt-2">
-                <input type="submit" class="btn btn-dark" value="Add Course" />
+                <input
+                  type="submit"
+                  class="btn btn-dark"
+                  value="Update Course"
+                />
               </div>
             </div>
           </form>
